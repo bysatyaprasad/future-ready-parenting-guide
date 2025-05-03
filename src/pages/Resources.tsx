@@ -1,10 +1,11 @@
+
 import React, { useState } from 'react';
 import PageHeader from '@/components/PageHeader';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import ResourceCard from '@/components/ResourceCard';
-import { Check, Filter, Search } from 'lucide-react';
+import { Check, Filter, Search, BookOpen } from 'lucide-react';
 
 const resourceTypes = [
   "All",
@@ -15,86 +16,129 @@ const resourceTypes = [
   "Tool"
 ];
 
+const ageGroups = [
+  "All Ages",
+  "Ages 3-7",
+  "Ages 8-12",
+  "Ages 13-18"
+];
+
+const skillCategories = [
+  "All Skills",
+  "Digital Literacy",
+  "Financial Intelligence",
+  "Communication",
+  "Critical Thinking",
+  "Entrepreneurship"
+];
+
 const initialResources = [
   {
-    title: "The Importance of Financial Literacy for Kids",
-    description: "An article discussing why it's crucial to teach children about money management early on.",
+    title: "Money Habits That Create Financial Security",
+    description: "Learn the critical money habits to teach your children from age 4 that most schools never cover but set the foundation for wealth.",
     type: "Article",
-    link: "https://www.example.com/financial-literacy-kids"
+    link: "https://www.example.com/financial-literacy-kids",
+    ageGroup: "Ages 3-7",
+    category: "Financial Intelligence"
   },
   {
-    title: "Coding for Beginners: A Step-by-Step Guide",
-    description: "A comprehensive video tutorial that introduces kids to the basics of coding.",
+    title: "How to Teach Coding to Kids (Even If You Can't Code)",
+    description: "A step-by-step video for parents who want to introduce programming concepts without being technical experts themselves.",
     type: "Video",
-    link: "https://www.example.com/coding-for-beginners"
+    link: "https://www.example.com/coding-for-beginners",
+    ageGroup: "Ages 8-12",
+    category: "Digital Literacy"
   },
   {
-    title: "Creative Thinking: Unlocking Your Child's Potential",
-    description: "A course designed to enhance creative thinking skills in children through interactive exercises.",
+    title: "Creative Problem-Solving Masterclass for Children",
+    description: "A structured course that develops innovative thinking patterns through engaging exercises that make learning fun.",
     type: "Course",
-    link: "https://www.example.com/creative-thinking-course"
+    link: "https://www.example.com/creative-thinking-course",
+    ageGroup: "Ages 8-12",
+    category: "Critical Thinking"
   },
   {
-    title: "The Entrepreneurial Kid: How to Start a Business",
-    description: "A book that guides young entrepreneurs through the process of starting their own business.",
+    title: "The Young Entrepreneur's Playbook",
+    description: "The definitive guide for parents who want to nurture business acumen in their children from an early age.",
     type: "Book",
-    link: "https://www.example.com/entrepreneurial-kid-book"
+    link: "https://www.example.com/entrepreneurial-kid-book",
+    ageGroup: "Ages 13-18",
+    category: "Entrepreneurship"
   },
   {
-    title: "Digital Safety Tool for Kids",
-    description: "A tool that helps parents monitor and protect their children's online activities.",
+    title: "Digital Safety Guardian",
+    description: "An essential tool that balances online learning opportunities with appropriate safety measures as children explore digital skills.",
     type: "Tool",
-    link: "https://www.example.com/digital-safety-tool"
+    link: "https://www.example.com/digital-safety-tool",
+    ageGroup: "All Ages",
+    category: "Digital Literacy"
   },
   {
-    title: "Investing for Teens: A Practical Guide",
-    description: "An article providing teens with practical advice on how to start investing.",
+    title: "Investment Foundations for Teens",
+    description: "Clear, actionable investment education specifically designed for teenage understanding and implementation.",
     type: "Article",
-    link: "https://www.example.com/investing-for-teens"
+    link: "https://www.example.com/investing-for-teens",
+    ageGroup: "Ages 13-18",
+    category: "Financial Intelligence"
   },
   {
-    title: "Public Speaking for Kids: Overcoming Stage Fright",
-    description: "A video tutorial that teaches children how to overcome stage fright and improve their public speaking skills.",
+    title: "Public Speaking for Future Leaders",
+    description: "Build confidence and persuasive communication skills through age-appropriate speaking exercises and techniques.",
     type: "Video",
-    link: "https://www.example.com/public-speaking-kids"
+    link: "https://www.example.com/public-speaking-kids",
+    ageGroup: "Ages 8-12",
+    category: "Communication"
   },
   {
-    title: "The Ultimate Guide to Personal Finance for Students",
-    description: "A course that covers all aspects of personal finance, from budgeting to saving and investing.",
+    title: "Complete Money Management System for Students",
+    description: "A comprehensive financial curriculum covering everything from basic budgeting to investment principles for young adults.",
     type: "Course",
-    link: "https://www.example.com/personal-finance-course"
+    link: "https://www.example.com/personal-finance-course",
+    ageGroup: "Ages 13-18",
+    category: "Financial Intelligence"
   },
   {
-    title: "Money Matters: A Kid's Guide to Financial Responsibility",
-    description: "A book that teaches children the importance of financial responsibility and how to make smart money choices.",
+    title: "Financial Responsibility: A Practical Guide for Kids",
+    description: "An illustrated guide that makes financial concepts accessible and engaging for younger children.",
     type: "Book",
-    link: "https://www.example.com/money-matters-book"
+    link: "https://www.example.com/money-matters-book",
+    ageGroup: "Ages 3-7",
+    category: "Financial Intelligence"
   },
   {
-    title: "Online Learning Platform for Kids",
-    description: "A platform that offers a variety of courses and resources for kids to learn new skills online.",
+    title: "Skill Portfolio Builder",
+    description: "A digital platform that helps children document and showcase their growing skills in a professional way.",
     type: "Tool",
-    link: "https://www.example.com/online-learning-platform"
+    link: "https://www.example.com/online-learning-platform",
+    ageGroup: "Ages 13-18",
+    category: "All Skills"
   }
 ];
 
 const Resources = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedType, setSelectedType] = useState("All");
+  const [selectedAge, setSelectedAge] = useState("All Ages");
+  const [selectedCategory, setSelectedCategory] = useState("All Skills");
   const [showFilters, setShowFilters] = useState(false);
 
   const filteredResources = initialResources.filter(resource => {
-    const searchMatch = resource.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                        resource.description.toLowerCase().includes(searchQuery.toLowerCase());
+    const searchMatch = 
+      resource.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      resource.description.toLowerCase().includes(searchQuery.toLowerCase());
+    
     const typeMatch = selectedType === "All" || resource.type === selectedType;
-    return searchMatch && typeMatch;
+    const ageMatch = selectedAge === "All Ages" || resource.ageGroup === selectedAge;
+    const categoryMatch = selectedCategory === "All Skills" || resource.category === selectedCategory;
+    
+    return searchMatch && typeMatch && ageMatch && categoryMatch;
   });
 
   return (
     <>
       <PageHeader 
-        title="Learning Resources" 
-        description="Curated educational materials to help your child develop future-ready skills."
+        title="Curated Learning Resources" 
+        description="Expert-selected educational materials to help your child develop future-ready skills at every age. All resources are vetted for quality and effectiveness."
       >
         <div className="flex flex-col md:flex-row items-center gap-4">
           <div className="relative w-full md:w-auto">
@@ -110,20 +154,46 @@ const Resources = () => {
 
           <Button variant="outline" onClick={() => setShowFilters(!showFilters)}>
             <Filter className="mr-2 h-4 w-4" />
-            Filter
+            {showFilters ? "Hide Filters" : "Show Filters"}
           </Button>
         </div>
 
         {showFilters && (
-          <div className="mt-4">
+          <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
             <Select value={selectedType} onValueChange={setSelectedType}>
-              <SelectTrigger className="w-full md:w-64">
-                <SelectValue placeholder="Select Type" />
+              <SelectTrigger>
+                <SelectValue placeholder="Resource Type" />
               </SelectTrigger>
               <SelectContent>
                 {resourceTypes.map((type) => (
                   <SelectItem key={type} value={type}>
                     {type}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+
+            <Select value={selectedAge} onValueChange={setSelectedAge}>
+              <SelectTrigger>
+                <SelectValue placeholder="Age Group" />
+              </SelectTrigger>
+              <SelectContent>
+                {ageGroups.map((age) => (
+                  <SelectItem key={age} value={age}>
+                    {age}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+
+            <Select value={selectedCategory} onValueChange={setSelectedCategory}>
+              <SelectTrigger>
+                <SelectValue placeholder="Skill Category" />
+              </SelectTrigger>
+              <SelectContent>
+                {skillCategories.map((category) => (
+                  <SelectItem key={category} value={category}>
+                    {category}
                   </SelectItem>
                 ))}
               </SelectContent>
@@ -134,11 +204,27 @@ const Resources = () => {
       
       <section className="section-padding">
         <div className="container-custom">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredResources.map((resource, index) => (
-              <ResourceCard key={index} {...resource} />
-            ))}
-          </div>
+          {filteredResources.length > 0 ? (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {filteredResources.map((resource, index) => (
+                <ResourceCard 
+                  key={index} 
+                  title={resource.title} 
+                  description={resource.description} 
+                  type={resource.type}
+                  link={resource.link}
+                  ageGroup={resource.ageGroup}
+                  category={resource.category}
+                />
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-12">
+              <BookOpen className="h-12 w-12 mx-auto text-gray-400 mb-4" />
+              <h3 className="text-xl font-semibold mb-2">No resources found</h3>
+              <p className="text-gray-600">Try adjusting your filters or search terms</p>
+            </div>
+          )}
         </div>
       </section>
     </>

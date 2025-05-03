@@ -2,7 +2,7 @@
 import React from 'react';
 import HeroSection from '@/components/HeroSection';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Book, Check, ChevronDown, Clock, Star } from 'lucide-react';
+import { Book, Check, ChevronDown, Clock, Star, ArrowRight, DollarSign, TrendingUp, BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
@@ -10,59 +10,63 @@ const Index = () => {
   const benefits = [
     {
       title: "Early Financial Understanding",
-      description: "Help kids understand money, savings, and investments at an age-appropriate level."
+      description: "Help your child grasp money concepts when their brain is most receptive, creating lifelong money intelligence."
     },
     {
       title: "Future-Proof Skills",
-      description: "Develop skills that will remain valuable despite changing job markets and technology."
+      description: "Develop abilities that remain valuable regardless of technological changes or market shifts."
     },
     {
       title: "Growth Mindset",
-      description: "Cultivate a mindset that embraces challenges and sees failures as opportunities to learn."
+      description: "Build mental resilience that transforms challenges into opportunities and failures into learning experiences."
     },
     {
       title: "Self-Directed Learning",
-      description: "Encourage curiosity and the ability to learn independently throughout life."
+      description: "Foster the ability to learn independently—perhaps the most critical skill for lifelong success in any field."
     }
   ];
   
   const featuredSkills = [
     {
       title: "Digital Literacy",
-      description: "Understanding technology fundamentals and adapting to new digital tools.",
+      description: "In today's world, digital fluency is as fundamental as reading. Your child needs to understand technology beyond just using it.",
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><path d="M22 5H20"/><path d="M7 15v2"/><path d="M17 15v2"/><path d="M2 10h20"/><path d="M2 7h20"/><path d="M12 19h0"/><path d="m5 21 14-4"/></svg>,
+      link: "/skills/digital-literacy"
     },
     {
       title: "Financial Intelligence",
-      description: "Learning how money works, basic economics, and personal finance skills.",
-      icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></svg>,
+      description: "Most schools don't teach money skills. Give your child the understanding of how wealth actually works in the real world.",
+      icon: <DollarSign className="h-6 w-6" />,
+      link: "/skills/financial-intelligence"
     },
     {
       title: "Communication",
-      description: "Developing verbal, written and presentation skills for effective expression.",
+      description: "In any field, the ability to clearly express ideas and persuade others remains one of the highest-paid skills globally.",
       icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>,
+      link: "/skills/communication"
     }
   ];
 
   return (
     <>
       <HeroSection
-        title="Prepare Your Child for a Successful Future"
-        subtitle="Learn how to nurture high-income skills and financial independence in your children from an early age."
-        ctaText="Explore Skills"
+        title="Build Your Child's Million-Rupee Skills Portfolio"
+        subtitle="Most parents focus on outdated education paths. Learn how to nurture high-income skills and financial independence from an early age before it's too late."
+        ctaText="Explore Skills Guide"
         ctaLink="/skills"
-        secondaryCtaText="Browse Resources"
-        secondaryCtaLink="/resources"
-        imageSrc="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=600&h=400"
+        secondaryCtaText="View Step-by-Step Roadmap"
+        secondaryCtaLink="/high-income-roadmap"
+        imageSrc="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600&h=400"
       />
 
       {/* Why This Matters Section */}
       <section className="section-padding bg-white">
         <div className="container-custom text-center">
-          <h2 className="text-3xl font-bold mb-3">Why This Matters</h2>
+          <h2 className="text-3xl font-bold mb-3">The Harsh Reality Most Parents Miss</h2>
           <p className="text-gray-600 mb-12 max-w-3xl mx-auto">
-            Today's world is changing faster than ever. The skills that will help your child thrive 
-            are different from what traditional education focuses on. Start early to build a foundation for lifelong success.
+            Traditional education is preparing children for a world that no longer exists. The skills that will create financial 
+            security are drastically different from what schools teach. Start early with intentional skill development or risk watching 
+            your child struggle in tomorrow's economy.
           </p>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -79,7 +83,7 @@ const Index = () => {
           </div>
 
           <Button asChild className="mt-10">
-            <Link to="/about">Learn More About Our Approach</Link>
+            <Link to="/about">Our Research-Based Approach</Link>
           </Button>
         </div>
       </section>
@@ -88,9 +92,9 @@ const Index = () => {
       <section className="section-padding bg-brand-gray">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-3">Essential Future Skills</h2>
+            <h2 className="text-3xl font-bold mb-3">High-Income Foundation Skills</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              These fundamental skills form the foundation for future success and can be developed from an early age.
+              These core abilities create the foundation for future success and can be developed from early childhood through simple, age-appropriate activities.
             </p>
           </div>
 
@@ -104,7 +108,13 @@ const Index = () => {
                   <CardTitle>{skill.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600">{skill.description}</p>
+                  <p className="text-gray-600 mb-4">{skill.description}</p>
+                  <Button asChild variant="outline" className="w-full">
+                    <Link to={skill.link} className="flex justify-between items-center">
+                      <span>Learn More</span>
+                      <ArrowRight className="h-4 w-4" />
+                    </Link>
+                  </Button>
                 </CardContent>
               </Card>
             ))}
@@ -112,7 +122,7 @@ const Index = () => {
 
           <div className="text-center mt-10">
             <Button asChild>
-              <Link to="/skills">View All Skills</Link>
+              <Link to="/skills">View All High-Value Skills</Link>
             </Button>
           </div>
         </div>
@@ -122,9 +132,9 @@ const Index = () => {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-3">Age-Appropriate Guidance</h2>
+            <h2 className="text-3xl font-bold mb-3">Age-Appropriate Development Guide</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Our resources are organized by age groups to ensure the right developmental approach at every stage.
+              Every age offers unique opportunities for skill development. Our research-based roadmaps ensure you're focusing on the right skills at the right time.
             </p>
           </div>
 
@@ -133,17 +143,17 @@ const Index = () => {
               {
                 age: "Ages 3-7",
                 title: "Early Foundations",
-                features: ["Basic financial concepts", "Digital awareness", "Creative thinking games"]
+                features: ["Money awareness through play", "Digital literacy fundamentals", "Creativity development"]
               },
               {
                 age: "Ages 8-12",
-                title: "Skill Building",
-                features: ["Intro to coding", "Money management", "Communication skills"]
+                title: "Core Skill Building",
+                features: ["Basic coding and tech skills", "Financial concepts and saving", "Public speaking foundations"]
               },
               {
                 age: "Ages 13-18",
                 title: "Advanced Development",
-                features: ["Personal projects", "Investment basics", "Entrepreneurship"]
+                features: ["Investment principles", "Portfolio creation", "Entrepreneurial ventures"]
               }
             ].map((group, index) => (
               <Card key={index} className="card-hover">
@@ -167,22 +177,53 @@ const Index = () => {
 
           <div className="text-center mt-10">
             <Button asChild variant="outline">
-              <Link to="/roadmap">View Detailed Roadmaps</Link>
+              <Link to="/roadmap">View Detailed Age Roadmaps</Link>
             </Button>
           </div>
         </div>
       </section>
 
+      {/* Value Proposition */}
+      <section className="section-padding bg-brand-blue text-white">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">What Makes This Approach Different</h2>
+            
+            <div className="space-y-6">
+              <div className="bg-white/10 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold mb-2">We Focus on Skills, Not Degrees</h3>
+                <p>The world economy rewards specific skills, not general credentials. In an AI-dominated future, only high-value skills will command premium incomes.</p>
+              </div>
+              
+              <div className="bg-white/10 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold mb-2">Early Compounding Advantage</h3>
+                <p>Skills developed in childhood compound exponentially. A 5-year head start can mean the difference between struggling and thriving in adulthood.</p>
+              </div>
+              
+              <div className="bg-white/10 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold mb-2">Financial Independence Focus</h3>
+                <p>We teach both skill development AND strategic income creation—preparing children to build income streams, not just chase jobs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Get Started CTA */}
-      <section className="bg-brand-blue text-white py-16">
+      <section className="bg-gradient-to-r from-brand-blue to-brand-blue/80 text-white py-16">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Start Your Child's Journey Today</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Start Your Child's Success Journey Today</h2>
           <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
-            Every skill they learn today compounds into future opportunities. Begin with our curated resources.
+            Don't wait until they're teenagers. The foundation for future financial success begins in early childhood.
           </p>
-          <Button asChild size="lg" variant="secondary" className="bg-brand-orange hover:bg-orange-600">
-            <Link to="/resources">Browse Resources</Link>
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" variant="secondary" className="bg-brand-orange hover:bg-orange-600">
+              <Link to="/high-income-roadmap">Follow Our Step-by-Step Guide</Link>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Link to="/resources">Browse Resources</Link>
+            </Button>
+          </div>
         </div>
       </section>
     </>
