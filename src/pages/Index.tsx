@@ -50,11 +50,11 @@ const Index = () => {
   return (
     <>
       <HeroSection
-        title="Build Your Child's Million-Rupee Skills Portfolio"
-        subtitle="Most parents focus on outdated education paths. Learn how to nurture high-income skills and financial independence from an early age before it's too late."
+        title="Build Your Child's 8-Figure Income Skills Portfolio"
+        subtitle="Most parents focus on outdated education paths. Start now with our proven system to nurture high-income skills that lead to true financial independence—before the opportunity window closes forever."
         ctaText="Explore Skills Guide"
         ctaLink="/skills"
-        secondaryCtaText="View Step-by-Step Roadmap"
+        secondaryCtaText="Follow Our Step-by-Step Roadmap"
         secondaryCtaLink="/high-income-roadmap"
         imageSrc="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600&h=400"
       />
@@ -85,6 +85,53 @@ const Index = () => {
           <Button asChild className="mt-10">
             <Link to="/about">Our Research-Based Approach</Link>
           </Button>
+        </div>
+      </section>
+
+      {/* Step-by-Step Roadmap Highlight Section */}
+      <section className="section-padding bg-brand-blue text-white">
+        <div className="container-custom">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">The Complete Step-by-Step Roadmap to Financial Independence</h2>
+            <p className="text-xl opacity-90 mb-6 max-w-3xl mx-auto">
+              Not just theory—this is your exact blueprint to guide your child from age 3 to adulthood, building the skills that create real wealth.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white/10 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-3">Precise Age-Based Guidance</h3>
+              <p className="mb-4">Detailed activities and focus areas broken down by exact age ranges—so you know exactly what to prioritize when.</p>
+              <div className="flex items-center text-brand-orange font-semibold">
+                <span>Ages 3-18 and beyond</span>
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </div>
+            </div>
+            
+            <div className="bg-white/10 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-3">Implementation Strategies</h3>
+              <p className="mb-4">Not just what to teach but exactly HOW to develop these skills with specific activities and resources tailored to each phase.</p>
+              <div className="flex items-center text-brand-orange font-semibold">
+                <span>Practical step-by-step actions</span>
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </div>
+            </div>
+            
+            <div className="bg-white/10 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-3">Parent Mindset Guidance</h3>
+              <p className="mb-4">Critical insights on how to help without hindering—the exact parenting approach needed for each developmental stage.</p>
+              <div className="flex items-center text-brand-orange font-semibold">
+                <span>Psychology-based approach</span>
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-10 text-center">
+            <Button asChild size="lg" variant="secondary" className="bg-brand-orange hover:bg-orange-600">
+              <Link to="/high-income-roadmap">Get The Complete Step-by-Step Roadmap</Link>
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -131,11 +178,16 @@ const Index = () => {
       {/* Age-Appropriate Guidance */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="text-center mb-12">
+          <div className="text-center mb-10">
             <h2 className="text-3xl font-bold mb-3">Age-Appropriate Development Guide</h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
               Every age offers unique opportunities for skill development. Our research-based roadmaps ensure you're focusing on the right skills at the right time.
             </p>
+            <div className="mt-4 bg-brand-blue/10 p-4 rounded-lg inline-block">
+              <p className="text-brand-blue font-medium">
+                <strong>Quick Guide vs. Complete Roadmap:</strong> Browse our quick reference guides below or follow our comprehensive step-by-step roadmap for deeper implementation strategies.
+              </p>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -175,9 +227,12 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="text-center mt-10">
+          <div className="text-center mt-10 flex flex-col sm:flex-row justify-center gap-4">
             <Button asChild variant="outline">
-              <Link to="/roadmap">View Detailed Age Roadmaps</Link>
+              <Link to="/roadmap">View Quick Reference Guides</Link>
+            </Button>
+            <Button asChild className="bg-brand-blue">
+              <Link to="/high-income-roadmap">Follow Complete Step-by-Step System</Link>
             </Button>
           </div>
         </div>
