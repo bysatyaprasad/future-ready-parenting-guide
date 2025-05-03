@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { ExternalLink, BookOpen, Video, Layers, Book, Tool, FileText } from 'lucide-react';
+import { ExternalLink, BookOpen, Video, Layers, Book, Wrench, FileText } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 
 interface ResourceCardProps {
@@ -25,7 +25,7 @@ const ResourceCard = ({ title, description, type, link, ageGroup, category }: Re
       case 'Book':
         return <Book size={18} />;
       case 'Tool':
-        return <Tool size={18} />;
+        return <Wrench size={18} />;
       default:
         return <BookOpen size={18} />;
     }
