@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { ExternalLink, BookOpen, Video, Layers, Book, Wrench, FileText } from 'lucide-react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { FileText, BookOpen, Layers } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 
 interface ResourceCardProps {
@@ -13,34 +13,25 @@ interface ResourceCardProps {
   category?: string;
 }
 
-const ResourceCard = ({ title, description, type, link, ageGroup, category }: ResourceCardProps) => {
+const ResourceCard = ({ title, description, type, ageGroup, category }: ResourceCardProps) => {
   const getIcon = () => {
     switch (type) {
       case 'Article':
         return <FileText size={18} />;
-      case 'Video':
-        return <Video size={18} />;
-      case 'Course':
+      case 'Guide':
         return <Layers size={18} />;
-      case 'Book':
-        return <Book size={18} />;
-      case 'Tool':
-        return <Wrench size={18} />;
-      default:
+      case 'Case Study':
         return <BookOpen size={18} />;
+      default:
+        return <FileText size={18} />;
     }
   };
   
   return (
-    <Card className="card-hover h-full flex flex-col">
+    <Card className="card-hover h-full flex flex-col transition-shadow hover:shadow-md">
       <CardHeader>
         <div className="flex items-center justify-between">
           <CardTitle className="text-lg">{title}</CardTitle>
-          {link && (
-            <a href={link} target="_blank" rel="noopener noreferrer" className="text-brand-blue">
-              <ExternalLink size={18} />
-            </a>
-          )}
         </div>
         <CardDescription className="flex items-center gap-1">
           {getIcon()} {type}
