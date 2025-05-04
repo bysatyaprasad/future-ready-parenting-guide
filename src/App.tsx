@@ -13,6 +13,8 @@ import Roadmap from "./pages/Roadmap";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import HighIncomeRoadmap from "./pages/HighIncomeRoadmap";
+import DigitalLiteracySkill from "./pages/DigitalLiteracySkill";
+import FinancialIntelligenceSkill from "./pages/FinancialIntelligenceSkill";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +32,8 @@ const App = () => (
             <Route path="/roadmap" element={<Roadmap />} />
             <Route path="/about" element={<About />} />
             <Route path="/high-income-roadmap" element={<HighIncomeRoadmap />} />
+            <Route path="/skills/digital-literacy" element={<DigitalLiteracySkill />} />
+            <Route path="/skills/financial-intelligence" element={<FinancialIntelligenceSkill />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
