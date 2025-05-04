@@ -39,8 +39,8 @@ const Resources = () => {
   return (
     <>
       <PageHeader 
-        title="Expert Learning Resources" 
-        description="Practical, easy-to-implement advice from subject matter experts. These concise articles help parents guide their children in developing essential future-ready skills."
+        title="Expert Learning Resources for Parents" 
+        description="Practical, easy-to-implement advice from subject matter experts. These concise articles help parents guide their children in developing essential future-ready skills for financial independence."
       >
         {!selectedArticle && (
           <ResourcesFilter 
