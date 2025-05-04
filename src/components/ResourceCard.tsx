@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { FileText, BookOpen, Layers, CheckSquare, LayoutList, Clock } from 'lucide-react';
+import { FileText, BookOpen, Layers, CheckSquare, LayoutList, Clock, GraduationCap, BookText, Code, LightbulbIcon } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 
 interface ResourceCardProps {
@@ -20,33 +20,39 @@ const ResourceCard = ({ title, description, type, readTime, ageGroup, category }
       case 'Article':
         return <FileText size={18} />;
       case 'Guide':
-        return <Layers size={18} />;
+        return <BookText size={18} />;
       case 'Case Study':
         return <BookOpen size={18} />;
       case 'Checklist':
         return <CheckSquare size={18} />;
       case 'Framework':
         return <LayoutList size={18} />;
+      case 'Skill Guide':
+        return <GraduationCap size={18} />;
+      case 'Technical Guide':
+        return <Code size={18} />;
       default:
-        return <FileText size={18} />;
+        return <LightbulbIcon size={18} />;
     }
   };
   
   return (
-    <Card className="card-hover h-full flex flex-col transition-shadow hover:shadow-md border-l-4 border-l-brand-blue overflow-hidden">
+    <Card className="card-hover h-full flex flex-col transition-all duration-300 hover:shadow-lg border-l-4 border-l-brand-blue overflow-hidden transform hover:translate-y-[-3px]">
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-purple-500"></div>
       <CardHeader className="pb-2">
         <div className="flex items-center justify-between">
           <CardTitle className="text-lg line-clamp-2 text-gray-800">{title}</CardTitle>
         </div>
         <CardDescription className="flex items-center gap-1 text-xs text-gray-600">
-          {getIcon()} {type}
+          <span className="bg-blue-50 p-1 rounded-md flex items-center">
+            {getIcon()}
+            <span className="ml-1">{type}</span>
+          </span>
           {readTime && (
-            <>
-              <span className="mx-1">•</span>
-              <Clock size={14} className="ml-1" />
+            <span className="flex items-center bg-gray-50 p-1 rounded-md ml-2">
+              <Clock size={14} className="mr-1" />
               <span>{readTime}</span>
-            </>
+            </span>
           )}
         </CardDescription>
       </CardHeader>

@@ -2,13 +2,13 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { ChevronLeft, Clock, BookOpen, ChevronRight } from 'lucide-react';
+import { ChevronLeft, Clock, BookOpen, ChevronRight, Bookmark, Share, Printer, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface ArticleContentProps {
   article: {
     title: string;
-    content?: string; // Made content optional
+    content?: string; // Content is optional
     readTime: string;
     category?: string;
     ageGroup?: string;
@@ -86,12 +86,29 @@ const ArticleContent = ({
           
           <h1 className="text-3xl font-bold mb-4 text-gray-800">{article.title}</h1>
           
-          <div className="flex items-center gap-2 text-gray-600 mb-8 border-b pb-4">
-            <BookOpen className="h-4 w-4" />
-            <span>FutureReady Experts</span>
-            <span className="mx-2">•</span>
-            <Clock className="h-4 w-4" />
-            <span>{article.readTime} read</span>
+          <div className="flex items-center justify-between text-gray-600 mb-8 border-b pb-4">
+            <div className="flex items-center gap-2">
+              <BookOpen className="h-4 w-4" />
+              <span>FutureReady Experts</span>
+              <span className="mx-2">•</span>
+              <Clock className="h-4 w-4" />
+              <span>{article.readTime} read</span>
+            </div>
+            
+            <div className="flex items-center gap-3">
+              <Button variant="ghost" size="sm" className="text-gray-600 hover:text-brand-blue">
+                <Bookmark className="h-4 w-4 mr-1" />
+                <span className="hidden sm:inline">Save</span>
+              </Button>
+              <Button variant="ghost" size="sm" className="text-gray-600 hover:text-brand-blue">
+                <Share className="h-4 w-4 mr-1" />
+                <span className="hidden sm:inline">Share</span>
+              </Button>
+              <Button variant="ghost" size="sm" className="text-gray-600 hover:text-brand-blue">
+                <Printer className="h-4 w-4 mr-1" />
+                <span className="hidden sm:inline">Print</span>
+              </Button>
+            </div>
           </div>
           
           {article.content ? (
@@ -119,10 +136,14 @@ const ArticleContent = ({
         </div>
       </div>
       
-      <div className="mt-8 text-center">
-        <p className="text-gray-500 text-sm">
-          Want personalized guidance? <Link to="/about" className="text-brand-blue hover:underline">Contact our experts</Link>
+      <div className="mt-8 flex flex-col items-center">
+        <p className="text-gray-500 text-sm mb-4">
+          Download this guide as a PDF to reference offline
         </p>
+        <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-blue-50">
+          <Download className="mr-2 h-4 w-4" />
+          Download PDF Guide
+        </Button>
       </div>
     </div>
   );
