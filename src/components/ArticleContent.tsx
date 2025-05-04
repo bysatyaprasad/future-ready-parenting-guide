@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 interface ArticleContentProps {
   article: {
     title: string;
-    content: string;
+    content?: string; // Made content optional
     readTime: string;
     category?: string;
     ageGroup?: string;
