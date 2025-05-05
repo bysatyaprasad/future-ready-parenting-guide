@@ -79,19 +79,22 @@ const Resources = () => {
   const { next, previous } = getAdjacentArticles();
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 min-h-screen">
       <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
         <TabsList className="hidden">
           <TabsTrigger value="all">All Resources</TabsTrigger>
           <TabsTrigger value="article">Article</TabsTrigger>
         </TabsList>
         
-        <TabsContent value="all" className="space-y-6">
-          <div className="max-w-3xl mx-auto">
-            <h1 className="text-3xl font-bold text-center mb-2">Parent Resources</h1>
-            <p className="text-gray-600 text-center mb-8">
-              Practical guides, research summaries, and tools to help you develop future-ready skills in your children
-            </p>
+        <TabsContent value="all" className="space-y-6 animate-fade-in">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10 bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-xl">
+              <h1 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Parent Resources</h1>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                Simple guides and tools to help your child build future-ready skills.
+                Each resource is designed to be easy to understand and put into practice.
+              </p>
+            </div>
             
             <ResourcesFilter
               searchQuery={searchQuery}
@@ -110,9 +113,9 @@ const Resources = () => {
             />
             
             {filteredResources.length === 0 ? (
-              <div className="text-center mt-12 py-8">
+              <div className="text-center mt-12 py-8 bg-gray-50 rounded-lg">
                 <h3 className="text-xl font-semibold mb-2">No resources match your filters</h3>
-                <p className="text-gray-600 mb-4">Try adjusting your search criteria or filters to find what you're looking for.</p>
+                <p className="text-gray-600 mb-4">Try changing your search or filters to find what you need.</p>
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
@@ -120,7 +123,7 @@ const Resources = () => {
                   <div 
                     key={index} 
                     onClick={() => handleResourceClick(resource)}
-                    className="cursor-pointer"
+                    className="cursor-pointer transform transition-all duration-300 hover:-translate-y-1"
                   >
                     <ResourceCard
                       title={resource.title}
@@ -137,7 +140,7 @@ const Resources = () => {
           </div>
         </TabsContent>
         
-        <TabsContent value="article">
+        <TabsContent value="article" className="animate-fade-in">
           {selectedArticle && (
             <ArticleContent
               article={selectedArticle}

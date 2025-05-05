@@ -1,1298 +1,1198 @@
 
-export const resourceTypes = [
-  "All",
-  "Article",
-  "Guide",
-  "Case Study",
-  "Checklist",
-  "Framework"
-];
-
-export const ageGroups = [
-  "All Ages",
-  "Ages 3-7",
-  "Ages 8-12",
-  "Ages 13-18"
-];
-
-export const skillCategories = [
-  "All Skills",
-  "Digital Literacy",
-  "Financial Intelligence",
-  "Communication",
-  "Critical Thinking",
-  "Entrepreneurship",
-  "Emotional Intelligence",
-  "Technical Skills",
-  "Creativity",
-  "Leadership",
-  "Time Management",
-  "Self-Learning"
-];
-
-// Export resources for the application to use
 export const resources = [
   {
-    title: "The Future-Ready Skills Portfolio: What Your Child Actually Needs",
-    description: "An expert breakdown of the most valuable skills your child should develop for financial independence in the future economy.",
-    type: "Framework",
-    link: "#future-ready-skills",
+    id: 1,
+    title: "How to Teach Your Child About Money",
+    description: "Simple ways to introduce money concepts to kids of all ages",
+    type: "Guide",
+    readTime: "5 min",
+    ageGroup: "All Ages",
+    category: "Financial Intelligence",
+    link: "#teaching-money-concepts",
+    content: `
+      <div class="mb-6">
+        <p>Money skills are important for every child. Learning about money early helps kids make smart choices later in life.</p>
+      </div>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">Why Teach Kids About Money?</h2>
+      <p>Children who learn about money early:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Feel more confident handling money</li>
+        <li>Make better spending choices</li>
+        <li>Learn to save for things they want</li>
+        <li>Understand the value of hard work</li>
+      </ul>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">Money Lessons By Age</h2>
+      
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 3-5:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Coin identification:</strong> Help them know different coins</li>
+        <li><strong>Counting game:</strong> Count coins together during playtime</li>
+        <li><strong>Saving jar:</strong> Use a clear jar to show how money adds up</li>
+        <li><strong>Shopping helper:</strong> Let them hand money to cashiers</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 6-10:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Allowance:</strong> Start a small weekly allowance</li>
+        <li><strong>Three jars:</strong> Create save, spend, and share jars</li>
+        <li><strong>Shopping budget:</strong> Give them ₹100 to spend at a store</li>
+        <li><strong>Earning extra:</strong> Simple chores to earn additional money</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 11-13:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Bank account:</strong> Open their first savings account</li>
+        <li><strong>Savings goal:</strong> Help them save for something big</li>
+        <li><strong>Price comparison:</strong> Compare prices of items they want</li>
+        <li><strong>Mobile money:</strong> Introduce digital payment concepts</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 14-18:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Budget planning:</strong> Create a simple monthly budget</li>
+        <li><strong>Part-time work:</strong> Encourage first job experiences</li>
+        <li><strong>Saving for college:</strong> Start education savings plans</li>
+        <li><strong>Investment basics:</strong> Explain simple investment ideas</li>
+      </ul>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">5 Fun Money Activities</h2>
+      <ol class="list-decimal pl-6 mb-4 space-y-3">
+        <li><strong>Market game:</strong> Set up a pretend shop at home with price tags</li>
+        <li><strong>Money board games:</strong> Play games like Monopoly Jr. or Money Bingo</li>
+        <li><strong>Shopping challenge:</strong> Find the best deals on groceries together</li>
+        <li><strong>Lemonade stand:</strong> Help them run a simple business</li>
+        <li><strong>Money story time:</strong> Read books about earning and saving</li>
+      </ol>
+      
+      <div class="bg-blue-50 p-4 rounded-lg mt-6">
+        <h3 class="font-semibold mb-2">Quick Tip:</h3>
+        <p>Use everyday moments to teach money lessons. Grocery shopping, bill paying, and saving for family trips are all good teaching opportunities.</p>
+      </div>
+    `
+  },
+  {
+    id: 2,
+    title: "Digital Literacy: Keeping Kids Safe Online",
+    description: "Protect your children while teaching them to navigate the digital world safely",
+    type: "Guide",
+    readTime: "6 min",
+    ageGroup: "All Ages",
+    category: "Digital Literacy",
+    link: "#kids-online-safety",
+    content: `
+      <div class="mb-6">
+        <p>Children today grow up with technology. As parents, we need to help them use it safely and wisely.</p>
+      </div>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">Online Safety Basics</h2>
+      <p>These simple steps help protect children online:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Use parental controls on devices and apps</li>
+        <li>Keep devices in common areas of your home</li>
+        <li>Set clear time limits for screen use</li>
+        <li>Know what apps and games your children use</li>
+        <li>Talk regularly about online experiences</li>
+      </ul>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">Age-Appropriate Digital Skills</h2>
+      
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 3-7:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Basic navigation:</strong> How to use touchscreens safely</li>
+        <li><strong>Simple passwords:</strong> Learning to keep information private</li>
+        <li><strong>Educational apps:</strong> Finding age-appropriate content</li>
+        <li><strong>Screen time:</strong> Understanding time limits</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 8-12:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Search skills:</strong> How to find reliable information</li>
+        <li><strong>Digital footprint:</strong> Understanding that online actions last</li>
+        <li><strong>Content creation:</strong> Making simple digital projects</li>
+        <li><strong>Online etiquette:</strong> Being kind and respectful online</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 13-18:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Privacy management:</strong> Setting strong privacy controls</li>
+        <li><strong>Critical thinking:</strong> Identifying fake news and scams</li>
+        <li><strong>Digital citizenship:</strong> Using technology responsibly</li>
+        <li><strong>Online identity:</strong> Building a positive online presence</li>
+      </ul>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">5 Important Conversations to Have</h2>
+      <ol class="list-decimal pl-6 mb-4 space-y-3">
+        <li><strong>Personal information:</strong> What should never be shared online</li>
+        <li><strong>Cyberbullying:</strong> How to recognize and respond to it</li>
+        <li><strong>Screen time balance:</strong> Making time for offline activities</li>
+        <li><strong>Online strangers:</strong> Why we don't chat with people we don't know</li>
+        <li><strong>Digital respect:</strong> Treating others kindly online</li>
+      </ol>
+      
+      <div class="bg-blue-50 p-4 rounded-lg mt-6">
+        <h3 class="font-semibold mb-2">Safety Tip:</h3>
+        <p>Create a family media agreement that outlines rules for device use. Include screen-free times, approved apps, and consequences for breaking rules.</p>
+      </div>
+    `
+  },
+  {
+    id: 3,
+    title: "Building Communication Skills in Children",
+    description: "Help your child develop strong speaking and listening abilities for future success",
+    type: "Article",
+    readTime: "4 min",
+    ageGroup: "All Ages",
+    category: "Communication",
+    link: "#communication-skills",
+    content: `
+      <div class="mb-6">
+        <p>Good communication skills help children succeed in school, make friends, and later in their careers. These skills can be developed from an early age.</p>
+      </div>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">Why Communication Matters</h2>
+      <p>Strong communication skills help children:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Express their needs and feelings clearly</li>
+        <li>Build better friendships</li>
+        <li>Perform better in school</li>
+        <li>Develop confidence in social situations</li>
+        <li>Prepare for future job success</li>
+      </ul>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">Communication Activities By Age</h2>
+      
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 3-7:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Story time:</strong> Read together daily and ask questions</li>
+        <li><strong>Show and tell:</strong> Practice describing objects at home</li>
+        <li><strong>Feeling words:</strong> Help name emotions during the day</li>
+        <li><strong>Phone calls:</strong> Let them talk to family members</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 8-12:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Family discussions:</strong> Include them in family decisions</li>
+        <li><strong>Active listening:</strong> Practice repeating what others say</li>
+        <li><strong>Writing letters:</strong> Send notes to friends or relatives</li>
+        <li><strong>Debate games:</strong> Argue different sides of simple topics</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 13-18:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Public speaking:</strong> Encourage presentation opportunities</li>
+        <li><strong>Negotiation skills:</strong> Let them make their case for privileges</li>
+        <li><strong>Interview practice:</strong> Role-play job or college interviews</li>
+        <li><strong>Digital communication:</strong> Discuss proper email and message etiquette</li>
+      </ul>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">5 Daily Communication Builders</h2>
+      <ol class="list-decimal pl-6 mb-4 space-y-3">
+        <li><strong>Dinner table talk:</strong> Have device-free meals with conversation</li>
+        <li><strong>Question of the day:</strong> Take turns answering an interesting question</li>
+        <li><strong>Media discussions:</strong> Talk about movies or books together</li>
+        <li><strong>Family meetings:</strong> Hold regular check-ins about family matters</li>
+        <li><strong>Feelings check:</strong> Ask about emotions and validate them</li>
+      </ol>
+      
+      <div class="bg-blue-50 p-4 rounded-lg mt-6">
+        <h3 class="font-semibold mb-2">Communication Tip:</h3>
+        <p>Model good communication yourself. Children learn by watching how you speak, listen, and resolve conflicts with others.</p>
+      </div>
+    `
+  },
+  {
+    id: 4,
+    title: "Teaching Problem-Solving Skills",
+    description: "Help your child develop critical thinking abilities through everyday challenges",
+    type: "Guide",
+    readTime: "5 min",
     ageGroup: "All Ages",
     category: "All Skills",
-    readTime: "6 min",
+    link: "#problem-solving",
     content: `
-      <h2>The Future-Ready Skills Portfolio: What Your Child Actually Needs</h2>
+      <div class="mb-6">
+        <p>Problem-solving is one of the most important skills for future success. Children who can think through challenges will excel in school and later in their careers.</p>
+      </div>
       
-      <p>As parents, we're bombarded with contradicting messages about what skills our children need. Coding is essential—no, wait, AI will do all coding. Learn Mandarin—no, translation technology makes languages unnecessary. The noise is overwhelming, especially when each choice seems to carry the weight of our children's entire future.</p>
-      
-      <p>After analyzing employment trends, technological developments, and economic forecasts, one pattern becomes clear: the most valuable skills are those that are <strong>transferable across domains</strong> and <strong>resistant to automation</strong>. These skills create a foundation that enables children to adapt to whatever specific technical requirements emerge as they enter adulthood.</p>
-      
-      <p>Here's the reality-based portfolio every child needs, regardless of their future career path:</p>
-      
-      <h3>1. Self-Directed Learning</h3>
-      
-      <p>The ability to identify knowledge gaps, find resources, and master new skills without external structure is becoming the ultimate competitive advantage. In a world where information is abundant but guidance is not, self-teaching is the master skill.</p>
-      
-      <p><strong>Why it matters:</strong> The half-life of professional knowledge is shrinking dramatically. In technical fields, nearly 50% of what students learn in their first year of college is outdated by graduation.</p>
-      
-      <p><strong>Small step to start:</strong> When your child asks a question, instead of answering, say: "That's a great question—how could we find that out together?" Then guide them through the research process.</p>
-      
-      <h3>2. Communication Precision</h3>
-      
-      <p>As collaboration networks become more complex and remote, the ability to articulate ideas with precision—in writing, verbally, and visually—sets successful professionals apart.</p>
-      
-      <p><strong>Why it matters:</strong> Communication effectiveness directly correlates with income across virtually all professions. Strong communicators earn 20-40% more than their peers with equal technical skills.</p>
-      
-      <p><strong>Small step to start:</strong> Institute a weekly "presentation night" where family members take turns teaching something they've learned in 3-5 minutes.</p>
-      
-      <h3>3. Complex Problem Decomposition</h3>
-      
-      <p>The ability to break large, ambiguous problems into smaller, solvable components is the foundation of both critical thinking and computational thinking.</p>
-      
-      <p><strong>Why it matters:</strong> As AI handles routine problems, human value increasingly comes from solving novel challenges that can't be addressed by existing algorithms or procedures.</p>
-      
-      <p><strong>Small step to start:</strong> When facing household challenges (planning a trip, reorganizing a room), involve your child in breaking down the process into discrete steps.</p>
-      
-      <h3>4. Information Evaluation</h3>
-      
-      <p>In an era of information overload and misinformation, the ability to assess credibility, identify bias, and synthesize conflicting sources is crucial for decision-making.</p>
-      
-      <p><strong>Why it matters:</strong> Poor information hygiene leads to decisions based on false premises, whether personal (health choices) or professional (strategic direction).</p>
-      
-      <p><strong>Small step to start:</strong> When your child shares a fact or news item, make it a habit to ask: "That's interesting—how do we know that's true? Where did that information come from?"</p>
-      
-      <h3>5. Emotional Intelligence + Digital Context</h3>
-      
-      <p>The fundamentals of emotional intelligence need a digital update. Understanding how emotions work in online environments, managing digital reputation, and navigating respectful disagreement are essential social skills.</p>
-      
-      <p><strong>Why it matters:</strong> Social dynamics increasingly play out in digital spaces where traditional emotional cues are limited, creating new challenges for relationship management.</p>
-      
-      <p><strong>Small step to start:</strong> After any digital communication mishap, help your child analyze what went wrong: "What do you think the other person understood from your message? How could we phrase it differently?"</p>
-      
-      <h3>The Skill Acquisition Sequence Matters</h3>
-      
-      <p>These foundational skills need to be developed in a specific sequence based on your child's developmental stage:</p>
-      
-      <p><strong>Ages 3-7:</strong> Focus on communication fundamentals, emotional awareness, and curiosity cultivation. This is when neural pathways for language and social intelligence are most plastic.</p>
-      
-      <p><strong>Ages 8-12:</strong> Introduce information evaluation and problem decomposition as abstract thinking develops. Begin digital literacy with supervised exploration.</p>
-      
-      <p><strong>Ages 13-18:</strong> Emphasize self-directed learning and nuanced communication across contexts. Develop metacognitive awareness—understanding how they learn best.</p>
-      
-      <h3>What About Technical Skills?</h3>
-      
-      <p>Specific technical skills (programming languages, design software, etc.) should be introduced in the context of projects that interest your child, <em>after</em> they've developed the foundational capabilities above. Without those foundations, technical skills become brittle and quickly obsolete.</p>
-      
-      <p>Remember: A child with strong foundational skills can acquire any technical skill when needed. The reverse is rarely true.</p>
-      
-      <p>The future belongs not to those who know the most facts or memorized the most procedures, but to those who can learn, unlearn, and adapt as the world changes around them.</p>
-    `
-  },
-  {
-    title: "How to Identify Your Child's Natural Talents (Before Age 12)",
-    description: "Research-backed methods to recognize innate abilities and strengths that can form the foundation of future career success.",
-    type: "Guide",
-    link: "#identify-talents",
-    ageGroup: "Ages 3-12",
-    category: "Self-Learning",
-    readTime: "8 min",
-    content: `
-      <h2>How to Identify Your Child's Natural Talents (Before Age 12)</h2>
-      
-      <p>As parents, we often wonder: What is my child naturally good at? What hidden abilities might go undiscovered? The early identification of your child's innate talents can significantly impact their educational journey, self-confidence, and eventually, their career path.</p>
-      
-      <p>But talent identification isn't about pushing children into predetermined paths—it's about recognizing where they might find their greatest joy and fulfillment through mastery. Here's how to spot these natural aptitudes using evidence-based approaches:</p>
-      
-      <h3>The Four Signals of Natural Talent</h3>
-      
-      <p>Research shows four key indicators that distinguish natural aptitude from general interest or temporary enthusiasm:</p>
-      
-      <h4>1. Rapid Learning</h4>
-      
-      <p>Children learn all skills at different rates, but unusual speed of acquisition in specific domains can signal innate talent. Watch for instances where your child masters something in significantly less time than peers or siblings.</p>
-      
-      <p><strong>What it looks like:</strong> A child who listens to a song once and can play it by ear, or who intuitively understands mathematical relationships before formal instruction.</p>
-      
-      <p><strong>How to spot it:</strong> Notice areas where your child seems to "skip steps" in the learning process or requires minimal repetition to achieve competence.</p>
-      
-      <h4>2. Sustained Attention</h4>
-      
-      <p>Flow states—where a child becomes completely absorbed in an activity—often indicate alignment between innate abilities and task demands.</p>
-      
-      <p><strong>What it looks like:</strong> Your normally active child sits drawing for 90 minutes, or works through multiple puzzles without seeking external rewards or recognition.</p>
-      
-      <p><strong>How to spot it:</strong> Track which activities cause your child to lose track of time or continue despite hunger, fatigue, or other distractions.</p>
-      
-      <h4>3. Self-Directed Practice</h4>
-      
-      <p>Children voluntarily practice activities aligned with their natural talents, often without external motivation.</p>
-      
-      <p><strong>What it looks like:</strong> A child who chooses to write stories during free time, experiments with building structures, or repeatedly practices dance movements they learned in class.</p>
-      
-      <p><strong>How to spot it:</strong> Monitor how your child spends truly discretionary time, especially when they believe no one is watching.</p>
-      
-      <h4>4. Strategic Frustration Response</h4>
-      
-      <p>How children respond to setbacks in different domains reveals much about their innate capabilities.</p>
-      
-      <p><strong>What it looks like:</strong> In areas of natural talent, challenges trigger problem-solving rather than abandonment. The child says, "Let me try again" instead of "I'm not good at this."</p>
-      
-      <p><strong>How to spot it:</strong> Create opportunities for safe failure across different domains, then observe response patterns.</p>
-      
-      <h3>The Systematic Observation Process</h3>
-      
-      <p>To identify your child's natural talents before age 12, implement this three-phase approach:</p>
-      
-      <h4>Phase 1: Broad Exposure (Ages 3-6)</h4>
-      
-      <p>Instead of just offering typical activities, systematically expose your child to diverse experiences across multiple domains:</p>
-      
-      <ul>
-        <li>Physical: Fine and gross motor activities, different sports, dance styles</li>
-        <li>Cognitive: Visual-spatial puzzles, verbal wordplay, numerical games, classification activities</li>
-        <li>Artistic: Various media (drawing, clay, digital), music (rhythm, melody, different instruments)</li>
-        <li>Social: Leadership opportunities, supportive roles, one-on-one and group interactions</li>
+      <h2 class="text-xl font-bold mb-3 mt-6">Why Problem-Solving Matters</h2>
+      <p>Good problem-solvers:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Handle frustration better</li>
+        <li>Feel more confident facing challenges</li>
+        <li>Think creatively about solutions</li>
+        <li>Make better decisions</li>
+        <li>Work well with others</li>
       </ul>
       
-      <p><strong>Action step:</strong> Create a simple exposure calendar ensuring your child experiences activities across all domains every month.</p>
+      <h2 class="text-xl font-bold mb-3 mt-6">The Problem-Solving Process</h2>
+      <p>Teach children these simple steps:</p>
+      <ol class="list-decimal pl-6 mb-4 space-y-2">
+        <li><strong>Identify the problem:</strong> "What exactly is the issue?"</li>
+        <li><strong>Think of solutions:</strong> "What are some possible ways to solve this?"</li>
+        <li><strong>Consider outcomes:</strong> "What might happen with each solution?"</li>
+        <li><strong>Try a solution:</strong> "Let's try this option"</li>
+        <li><strong>Evaluate results:</strong> "Did it work? What did we learn?"</li>
+      </ol>
       
-      <h4>Phase 2: Focused Observation (Ages 5-9)</h4>
+      <h2 class="text-xl font-bold mb-3 mt-6">Problem-Solving Activities By Age</h2>
       
-      <p>During this phase, create a "talent journal" documenting:
-      <br>• Activities where your child shows the four signals
-      <br>• Specific elements they excel at within each activity
-      <br>• Environments where their abilities shine most brightly
-      <br>• Their emotional state during and after different activities</p>
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 3-7:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Simple puzzles:</strong> Age-appropriate jigsaw puzzles</li>
+        <li><strong>Building blocks:</strong> Creating structures with blocks</li>
+        <li><strong>Story problems:</strong> "What should the character do next?"</li>
+        <li><strong>Nature exploration:</strong> "How can we cross this puddle?"</li>
+      </ul>
       
-      <p><strong>Important note:</strong> Look beyond conventional categories. For instance, a child building elaborate LEGO structures might be showing spatial intelligence, engineering aptitude, aesthetic sensitivity, or storytelling ability—or a combination.</p>
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 8-12:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Strategy games:</strong> Chess, checkers, and card games</li>
+        <li><strong>DIY projects:</strong> Making things with basic materials</li>
+        <li><strong>Mystery books:</strong> Stories that require figuring things out</li>
+        <li><strong>Cooking challenges:</strong> Following and adapting recipes</li>
+      </ul>
       
-      <h4>Phase 3: Talent Development (Ages 8-12)</h4>
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 13-18:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Complex puzzles:</strong> Logic puzzles and brain teasers</li>
+        <li><strong>Coding projects:</strong> Programming simple apps or games</li>
+        <li><strong>Design challenges:</strong> Creating solutions to everyday problems</li>
+        <li><strong>Budget planning:</strong> Managing money for an event or trip</li>
+      </ul>
       
-      <p>Once you've identified 2-3 areas of potential natural talent, provide:
-      <br>• Access to quality instruction from knowledgeable mentors
-      <br>• Time for deliberate practice (challenging activities just beyond current ability)
-      <br>• Connection to peer communities with similar interests
-      <br>• Opportunities to apply skills in meaningful contexts</p>
+      <h2 class="text-xl font-bold mb-3 mt-6">Helping Without Solving</h2>
+      <p>When your child faces a problem:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Ask questions instead of giving answers</li>
+        <li>Give time to think of solutions</li>
+        <li>Praise effort, not just success</li>
+        <li>Talk through failed attempts: "What can we try next?"</li>
+        <li>Share your own problem-solving experiences</li>
+      </ul>
       
-      <p>Remember that development should be child-led but parent-supported. Watch for signs of burnout or diminishing intrinsic motivation.</p>
-      
-      <h3>Common Talent Identification Mistakes</h3>
-      
-      <p><strong>Mistaking privilege for talent:</strong> Early access to resources can create the illusion of natural ability. Consider whether your child's apparent talent might simply reflect opportunity.</p>
-      
-      <p><strong>Projecting parental interests:</strong> Our enthusiasm for activities we enjoy or value can be misinterpreted as our child's innate talent.</p>
-      
-      <p><strong>Overlooking non-conventional talents:</strong> Some of the most valuable aptitudes—systems thinking, emotional intelligence, aesthetic sensitivity—may not be easily recognized or celebrated in traditional educational settings.</p>
-      
-      <p><strong>Rushing specialization:</strong> Even when talent is evident, early specialization can lead to burnout and missed developmental opportunities. Before age 12, breadth remains crucial.</p>
-      
-      <h3>Beyond Conventional Categories</h3>
-      
-      <p>Modern talent research has expanded beyond traditional academic or artistic domains. Watch for these emerging talent categories:</p>
-      
-      <p><strong>Systems thinking:</strong> Natural ability to understand how different parts interact within a whole. These children excel at seeing connections and anticipating consequences.</p>
-      
-      <p><strong>Associative thinking:</strong> Making unusual but meaningful connections between seemingly unrelated ideas—the foundation of creativity.</p>
-      
-      <p><strong>Sensory processing:</strong> Exceptional sensitivity to and discrimination of sensory information (visual details, sound patterns, physical sensations).</p>
-      
-      <p><strong>Empathic accuracy:</strong> The ability to correctly identify others' emotions and mental states—crucial for leadership, negotiation, and relationship management.</p>
-      
-      <p>Remember that every child possesses unique combinations of abilities. The goal isn't to label your child as "talented" or "not talented," but to understand their individual aptitude profile so you can provide appropriate challenges and support.</p>
-      
-      <p>By identifying your child's natural talents early, you help them develop confidence through genuine competence—perhaps the greatest gift a parent can offer.</p>
+      <div class="bg-blue-50 p-4 rounded-lg mt-6">
+        <h3 class="font-semibold mb-2">Problem-Solving Tip:</h3>
+        <p>Resist the urge to jump in and fix problems for your child. When you step back, you give them the chance to develop important thinking skills.</p>
+      </div>
     `
   },
   {
-    title: "7 High-Value Technical Skills Worth Teaching Early",
-    description: "Specific technical abilities that will remain valuable regardless of automation, with age-appropriate learning strategies.",
+    id: 5,
+    title: "Growth Mindset: Helping Kids Embrace Challenges",
+    description: "Foster a positive attitude toward learning and overcoming obstacles",
+    type: "Article",
+    readTime: "4 min",
+    ageGroup: "All Ages",
+    category: "All Skills",
+    link: "#growth-mindset",
+    content: `
+      <div class="mb-6">
+        <p>A growth mindset is the belief that abilities can be developed through effort and learning. Children with this mindset try harder, learn more, and achieve greater success.</p>
+      </div>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">Fixed vs. Growth Mindset</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+        <div class="bg-red-50 p-4 rounded-lg">
+          <h3 class="font-semibold mb-2">Fixed Mindset Thinking:</h3>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>"I'm not good at math."</li>
+            <li>"I can't draw."</li>
+            <li>"I'll never be able to do this."</li>
+            <li>"I'm just not a sports person."</li>
+            <li>"This is too hard for me."</li>
+          </ul>
+        </div>
+        
+        <div class="bg-green-50 p-4 rounded-lg">
+          <h3 class="font-semibold mb-2">Growth Mindset Thinking:</h3>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>"I'm still learning math."</li>
+            <li>"I'm practicing my drawing skills."</li>
+            <li>"I can't do this yet, but I'll keep trying."</li>
+            <li>"I can improve at sports with practice."</li>
+            <li>"This is challenging, but I'll figure it out."</li>
+          </ul>
+        </div>
+      </div>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">Building Growth Mindset at Different Ages</h2>
+      
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 3-7:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Use growth language:</strong> "You worked so hard on that!"</li>
+        <li><strong>Read books:</strong> Stories about persistence and effort</li>
+        <li><strong>Celebrate mistakes:</strong> "Mistakes help our brains grow!"</li>
+        <li><strong>Try new things:</strong> Encourage exploring different activities</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 8-12:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Set learning goals:</strong> Focus on improvement, not just grades</li>
+        <li><strong>Discuss brain growth:</strong> Explain how learning builds new connections</li>
+        <li><strong>Share struggles:</strong> Talk about challenges you face</li>
+        <li><strong>Problem-solving journal:</strong> Record challenges and solutions</li>
+      </ul>
+      
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 13-18:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Growth reflection:</strong> Review progress in different skills</li>
+        <li><strong>Role models:</strong> Study people who overcame obstacles</li>
+        <li><strong>Reframe setbacks:</strong> View failures as learning opportunities</li>
+        <li><strong>Challenge seeking:</strong> Encourage trying difficult things</li>
+      </ul>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">The Power of "Yet"</h2>
+      <p>Add "yet" to statements about things your child can't do:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>"I don't understand this math problem <strong>yet</strong>."</li>
+        <li>"I can't ride a bike <strong>yet</strong>."</li>
+        <li>"I haven't learned to code <strong>yet</strong>."</li>
+      </ul>
+      <p>This simple word shows that abilities can change with time and effort.</p>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">Praise That Promotes Growth</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+        <div class="bg-red-50 p-4 rounded-lg">
+          <h3 class="font-semibold mb-2">Instead of:</h3>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>"You're so smart!"</li>
+            <li>"You're a natural at this!"</li>
+            <li>"Great job getting an A!"</li>
+          </ul>
+        </div>
+        
+        <div class="bg-green-50 p-4 rounded-lg">
+          <h3 class="font-semibold mb-2">Try:</h3>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>"You worked so hard on this!"</li>
+            <li>"I like how you tried different strategies!"</li>
+            <li>"Your practice is really paying off!"</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="bg-blue-50 p-4 rounded-lg mt-6">
+        <h3 class="font-semibold mb-2">Growth Mindset Tip:</h3>
+        <p>Model growth mindset yourself. Talk about your own learning, mistakes, and persistence. Children learn as much from what we do as what we say.</p>
+      </div>
+    `
+  },
+  {
+    id: 6,
+    title: "Teaching Kids About Online Privacy",
+    description: "Help children understand how to protect their personal information online",
     type: "Checklist",
-    link: "#high-value-skills",
-    ageGroup: "Ages 8-18",
-    category: "Technical Skills",
-    readTime: "7 min",
-    content: `
-      <h2>7 High-Value Technical Skills Worth Teaching Early</h2>
-      
-      <p>As technologies evolve at breakneck speed, parents face a challenging question: Which technical skills will remain valuable throughout my child's lifetime? With AI and automation continuously reshaping the landscape, focusing on the right skills becomes crucial.</p>
-      
-      <p>This guide identifies technical capabilities that are both foundational and future-resilient—skills that will maintain their value regardless of specific technological changes.</p>
-      
-      <h3>1. Data Literacy</h3>
-      
-      <p><strong>Why it's valuable:</strong> As data volumes continue to explode, the ability to interpret, visualize and draw conclusions from information will remain essential across virtually all fields.</p>
-      
-      <p><strong>What it includes:</strong>
-      <br>• Understanding basic statistical concepts
-      <br>• Creating and interpreting visual representations of data
-      <br>• Recognizing patterns and anomalies
-      <br>• Drawing valid conclusions while avoiding common reasoning pitfalls</p>
-      
-      <p><strong>Age-appropriate learning:</strong></p>
-      
-      <p><em>Ages 8-10:</em> Start with physical data representation (building bar graphs with actual objects), teaching that numbers tell stories. Sort and classify objects by multiple attributes, then represent findings visually.</p>
-      
-      <p><em>Ages 11-13:</em> Introduce spreadsheets for personal projects (tracking sports statistics, analyzing spending). Discuss the concepts of mean, median and mode using real-world examples relevant to their interests.</p>
-      
-      <p><em>Ages 14-18:</em> Explore public datasets on topics they care about. Introduce basic data visualization tools like Tableau Public. Discuss how data can be misleading through project-based learning.</p>
-      
-      <h3>2. Computational Thinking</h3>
-      
-      <p><strong>Why it's valuable:</strong> Beyond coding, computational thinking is about breaking complex problems into solvable parts—a meta-skill applicable across disciplines.</p>
-      
-      <p><strong>What it includes:</strong>
-      <br>• Decomposition: Breaking problems into manageable components
-      <br>• Pattern recognition: Identifying similarities within and between problems
-      <br>• Abstraction: Focusing on important information while filtering out noise
-      <br>• Algorithm design: Creating step-by-step solutions</p>
-      
-      <p><strong>Age-appropriate learning:</strong></p>
-      
-      <p><em>Ages 8-10:</em> Use "unplugged" activities like creating precise instructions for making a sandwich or navigating a family member through an obstacle course. Introduce simple block-based programming like ScratchJr.</p>
-      
-      <p><em>Ages 11-13:</em> Graduate to full Scratch programming, focusing on creating projects they care about. Introduce the concept of variables and conditional logic through interactive stories.</p>
-      
-      <p><em>Ages 14-18:</em> Choose a text-based language aligned with their interests (Python for data/science, JavaScript for web development). Focus on solving real problems rather than syntax mastery.</p>
-      
-      <h3>3. Digital Content Creation</h3>
-      
-      <p><strong>Why it's valuable:</strong> The ability to create clear, compelling digital content—whether written, visual, or multimedia—will remain essential for communication, persuasion, and expression.</p>
-      
-      <p><strong>What it includes:</strong>
-      <br>• Digital writing for different contexts and audiences
-      <br>• Basic graphic design principles
-      <br>• Audio and video production fundamentals
-      <br>• Multimodal storytelling</p>
-      
-      <p><strong>Age-appropriate learning:</strong></p>
-      
-      <p><em>Ages 8-10:</em> Start with digital storytelling apps that combine images and text. Encourage creation of simple slide presentations about topics they're passionate about.</p>
-      
-      <p><em>Ages 11-13:</em> Introduce basic photo editing, simple animation tools, and audio recording. Focus on creating content that serves authentic purposes (family newsletters, documenting events).</p>
-      
-      <p><em>Ages 14-18:</em> Explore more sophisticated tools based on their interests. Emphasize projects with real audiences and constructive feedback loops. Discuss how to adapt content for different platforms and purposes.</p>
-      
-      <h3>4. Systems Management</h3>
-      
-      <p><strong>Why it's valuable:</strong> Understanding how to organize digital workspaces, manage information flow, and maintain technological systems will become increasingly important as our digital lives grow more complex.</p>
-      
-      <p><strong>What it includes:</strong>
-      <br>• File organization and naming conventions
-      <br>• Digital backup strategies
-      <br>• Permission and access management
-      <br>• Software update and maintenance routines
-      <br>• Basic troubleshooting methodologies</p>
-      
-      <p><strong>Age-appropriate learning:</strong></p>
-      
-      <p><em>Ages 8-10:</em> Introduce the concept of files and folders through concrete metaphors. Create simple organization systems together for their digital work.</p>
-      
-      <p><em>Ages 11-13:</em> Give increasing responsibility for managing their digital spaces. Teach screenshot creation and problem documentation for troubleshooting.</p>
-      
-      <p><em>Ages 14-18:</em> Involve them in family technology decisions and maintenance. Teach how to evaluate software options, manage updates, and implement security practices.</p>
-      
-      <h3>5. Network Literacy</h3>
-      
-      <p><strong>Why it's valuable:</strong> Understanding how devices communicate and how information flows through networks provides crucial context for security, privacy, and effective digital citizenship.</p>
-      
-      <p><strong>What it includes:</strong>
-      <br>• Basic networking concepts (IP addresses, DNS, clients and servers)
-      <br>• How the internet works fundamentally
-      <br>• Security principles for networked systems
-      <br>• Privacy implications of connected technologies</p>
-      
-      <p><strong>Age-appropriate learning:</strong></p>
-      
-      <p><em>Ages 8-10:</em> Use physical analogies (passing messages through intermediaries) to explain computer networks. Discuss basic online safety in concrete terms.</p>
-      
-      <p><em>Ages 11-13:</em> Explain cookies, browsing history, and digital footprints. Conduct simple demonstrations showing how information travels over networks.</p>
-      
-      <p><em>Ages 14-18:</em> Introduce more advanced concepts like encryption, VPNs, and network protocols. Discuss real-world implications of network design decisions.</p>
-      
-      <h3>6. Human-Computer Interaction</h3>
-      
-      <p><strong>Why it's valuable:</strong> As interfaces evolve beyond screens to voice, gesture, and augmented reality, understanding how humans and computers communicate becomes increasingly valuable.</p>
-      
-      <p><strong>What it includes:</strong>
-      <br>• Interface evaluation and usability principles
-      <br>• Accessibility awareness and inclusive design
-      <br>• Experience with multiple input methods
-      <br>• Recognition of interaction patterns across platforms</p>
-      
-      <p><strong>Age-appropriate learning:</strong></p>
-      
-      <p><em>Ages 8-10:</em> Compare different interfaces for similar tasks (games across platforms, different calculators). Discuss what makes some easier to use than others.</p>
-      
-      <p><em>Ages 11-13:</em> Design paper prototypes for imaginary apps. Test with family members and iterate based on feedback. Introduce the concept of accessibility through simulations.</p>
-      
-      <p><em>Ages 14-18:</em> Create interactive prototypes using tools like Figma or Adobe XD. Conduct usability testing with diverse users. Discuss ethical implications of interface design decisions.</p>
-      
-      <h3>7. Automation Literacy</h3>
-      
-      <p><strong>Why it's valuable:</strong> Understanding what can be automated, how to implement automation, and when human intervention remains necessary will be crucial in a world of increasing machine intelligence.</p>
-      
-      <p><strong>What it includes:</strong>
-      <br>• Recognition of automatable patterns
-      <br>• Basic scripting and workflow automation
-      <br>• Understanding of AI capabilities and limitations
-      <br>• Critical judgment about appropriate uses of automation</p>
-      
-      <p><strong>Age-appropriate learning:</strong></p>
-      
-      <p><em>Ages 8-10:</em> Identify repetitive tasks in daily life that could be automated. Create simple "robots" (physical or digital) that follow instructions to complete tasks.</p>
-      
-      <p><em>Ages 11-13:</em> Introduce basic automation tools like IFTTT or Zapier for simple personal workflows. Discuss examples of automation in the world around them.</p>
-      
-      <p><em>Ages 14-18:</em> Experiment with more sophisticated automation, including simple AI tools. Critically evaluate scenarios where automation helps or potentially harms.</p>
-      
-      <h3>Key Implementation Principles</h3>
-      
-      <p>When developing these technical skills, remember:</p>
-      
-      <p><strong>1. Context over content</strong> - These skills should be learned through projects connected to your child's genuine interests, not as isolated technical exercises.</p>
-      
-      <p><strong>2. Creation over consumption</strong> - Prioritize activities where your child builds and creates rather than merely uses existing tools.</p>
-      
-      <p><strong>3. Cycles not checklists</strong> - Skills develop through repeated cycles of learning, application, and reflection—not by completing one-time activities.</p>
-      
-      <p><strong>4. Reflection is essential</strong> - Regular conversations about what worked, what didn't, and why are as important as the technical activities themselves.</p>
-      
-      <p>By focusing on these enduring technical skills rather than fleeting specific technologies, you prepare your child to adapt confidently to whatever digital landscape emerges in their future.</p>
-    `
-  },
-  {
-    title: "The Compound Effect: Starting Money Habits at Age 5",
-    description: "Simple financial behaviors that, when started early, build the foundation for future wealth and independence.",
-    type: "Article",
-    link: "#money-habits",
-    ageGroup: "Ages 3-7",
-    category: "Financial Intelligence",
     readTime: "5 min",
-    content: `
-      <h2>The Compound Effect: Starting Money Habits at Age 5</h2>
-      
-      <p>The most powerful financial advantage isn't a high-paying job or brilliant investment strategy—it's starting early. Here's how to establish money habits that will compound throughout your child's life:</p>
-      
-      <h3>The Three Jars System (Ages 5-7)</h3>
-      <p>Set up three transparent jars labeled "Spend," "Save," and "Share." Each time your child receives money (gifts, allowance), help them divide it: 50% to Spend, 40% to Save, 10% to Share. The transparency is crucial—seeing money physically grow creates a stronger neural connection than digital numbers.</p>
-      
-      <p><strong>What to say:</strong> "This is how money works for grown-ups too. Some money is for things we need now, some is for important things later, and some is for helping others."</p>
-      
-      <h3>The Power of Waiting (Ages 5-7)</h3>
-      <p>When your child wants something, resist the urge to buy it immediately. Instead, help them put it on a "Wish List" with the price. This creates space between desire and purchase—a critical skill in today's instant-gratification economy.</p>
-      
-      <p><strong>What to say:</strong> "Instead of buying this right away, let's put it on your wish list. If you still want it next week, we can use your spend jar. Sometimes our brains trick us into wanting things we don't really care about."</p>
-      
-      <h3>Work Before Money (Ages 5-7)</h3>
-      <p>Create a simple connection between effort and reward. Small chores beyond their normal responsibilities (sorting laundry, watering plants) can earn small amounts. The focus isn't on the amount, but establishing the mental link between work and earning.</p>
-      
-      <p><strong>What to do:</strong> Create a simple chart showing 3-4 optional tasks with coin values. Keep tasks concrete and completion-obvious: "Water all plants" rather than "help with gardening."</p>
-      
-      <h3>Making Choices Visual (Ages 5-7)</h3>
-      <p>When shopping together, occasionally verbalize trade-off decisions: "I could buy this ₹100 coffee OR save it toward our family movie night." This demonstrates that every purchase is actually a choice between that item and something else.</p>
-      
-      <p><strong>Activity to try:</strong> Give them ₹50 in a store with several under-₹50 options. The constraint forces comparison and decision-making, building the mental muscles for future financial choices.</p>
-      
-      <h3>The Match Game (Ages 6-7)</h3>
-      <p>For longer-term goals (a special toy, book, or experience), offer to match their savings. If they save ₹200 toward a ₹400 item, you contribute the other ₹200. This introduces the concept of investment matching they'll encounter later with employer retirement contributions.</p>
-      
-      <p><strong>Why this matters:</strong> Children who develop healthy money habits before age 7 show significantly better financial behaviors as adults. These aren't just cute activities—they're laying neural pathways that will influence thousands of future financial decisions.</p>
-      
-      <h3>Talking About Family Finances (Ages 6-7)</h3>
-      <p>Many Indian families consider money discussions taboo, but appropriate transparency builds financial intelligence. Share simplified versions of family financial decisions: "We're saving for a family trip rather than buying a new TV right now."</p>
-      
-      <p><strong>What to avoid:</strong> Never burden children with adult financial stress or make them feel insecure. The goal is to model thoughtful decision-making, not create anxiety.</p>
-      
-      <h3>Creating Money Stories (Ages 6-7)</h3>
-      <p>Our relationship with money is shaped by the stories we tell ourselves. Help your child develop positive narratives: "In our family, we save first, then enjoy spending," or "Money is a tool that helps us do important things."</p>
-      
-      <p><strong>Cultural context:</strong> In many Indian households, financial decisions balance short-term needs with strong emphasis on long-term security. Explain this value system in age-appropriate ways: "We save for important things like education because learning helps us grow stronger and happier."</p>
-      
-      <h3>Beyond the Basics: Ages 7+</h3>
-      <p>As your child masters these fundamentals, gradually introduce more sophisticated concepts:</p>
-      
-      <ul>
-        <li>The difference between needs and wants</li>
-        <li>How banks work (perhaps opening their first savings account)</li>
-        <li>Simple interest through practical demonstrations</li>
-        <li>The concept of opportunity cost in age-appropriate terms</li>
-      </ul>
-      
-      <p>Remember that financial behaviors are largely set by age 7, according to research from the University of Cambridge. The habits formed now—whether thoughtful or impulsive—tend to persist into adulthood.</p>
-      
-      <p>By starting early with these simple practices, you're not just teaching money skills—you're establishing the cornerstone of future financial independence.</p>
-    `
-  },
-  {
-    title: "The Creativity Crisis: Why and How to Protect Your Child's Creative Thinking",
-    description: "Practical strategies for parents to nurture innovative thinking in an increasingly standardized education system.",
-    type: "Case Study",
-    link: "#creativity-crisis",
-    ageGroup: "All Ages",
-    category: "Creativity",
-    readTime: "8 min",
-    content: `
-      <h2>The Creativity Crisis: Why and How to Protect Your Child's Creative Thinking</h2>
-      
-      <p>Despite our universal agreement about the importance of creativity in today's world, we face a troubling paradox: standardized testing shows that children's creative thinking abilities have been declining steadily since the 1990s. This decline is particularly pronounced in children aged 5-10—precisely when creative capacity should be expanding rapidly.</p>
-      
-      <p>For Indian parents navigating an education system often focused on standardized outcomes and examination performance, protecting and nurturing your child's innate creativity requires deliberate intervention. Here's why it matters and what you can do:</p>
-      
-      <h3>Understanding the Creativity Crisis</h3>
-      
-      <p>Creativity isn't just artistic expression—it's the ability to generate novel, useful ideas and solutions. According to longitudinal studies by educational psychologist Dr. KH Kim, today's children are less able to:</p>
-      
-      <ul>
-        <li>Generate multiple solutions to a single problem</li>
-        <li>Make unusual connections between disparate concepts</li>
-        <li>Elaborate on initial ideas with detail and nuance</li>
-        <li>Exhibit intellectual curiosity and open-ended questioning</li>
-      </ul>
-      
-      <p>These deficits affect not just artistic pursuits but problem-solving across all domains—from mathematics to social interactions.</p>
-      
-      <h3>Why Creativity Matters More Than Ever</h3>
-      
-      <p>In an era of increasing automation, purely analytical tasks are precisely what machines do best. The World Economic Forum consistently ranks creative problem-solving among the top skills required for future workforce success, regardless of industry.</p>
-      
-      <p>More importantly, creative thinking is strongly correlated with:</p>
-      <ul>
-        <li>Psychological resilience and adaptive coping</li>
-        <li>Higher academic achievement across subjects</li>
-        <li>Greater career satisfaction and advancement</li>
-        <li>Innovative entrepreneurship capabilities</li>
-      </ul>
-      
-      <h3>The Seven Creativity Suppressors</h3>
-      
-      <p>Before we discuss solutions, it's important to recognize how everyday parenting and educational practices can unintentionally suppress creative development:</p>
-      
-      <h4>1. Excessive Schedule Structure</h4>
-      <p>When every minute is programmed with activities, children lose the unstructured time essential for imaginative play and self-directed exploration.</p>
-      
-      <h4>2. Entertainment Over Creation</h4>
-      <p>Passive consumption of content (even educational content) develops different neural pathways than active creation and problem-solving.</p>
-      
-      <h4>3. Risk Aversion</h4>
-      <p>When we prioritize "correct" answers over novel approaches, children learn to avoid intellectual risk-taking.</p>
-      
-      <h4>4. Praise for Achievement Rather Than Process</h4>
-      <p>Celebrating only outcomes rather than creative effort teaches children to seek validation through conformity.</p>
-      
-      <h4>5. Immediate Problem Resolution</h4>
-      <p>Rushing to solve children's problems or answer their questions denies them the productive struggle that builds creative muscle.</p>
-      
-      <h4>6. Binary Thinking</h4>
-      <p>Presenting issues as having single "right" answers rather than exploring multiple perspectives limits ideational flexibility.</p>
-      
-      <h4>7. Extrinsic Motivation Systems</h4>
-      <p>Over-reliance on rewards and competitive outcomes shifts focus from the intrinsic joy of creative exploration.</p>
-      
-      <h3>Practical Creativity Protection Strategies</h3>
-      
-      <p>The good news: research shows that creativity can be recovered and strengthened with consistent practice. Here's how:</p>
-      
-      <h4>1. Create White Space in the Schedule</h4>
-      <p><strong>What to do:</strong> Ensure your child has at least 1-2 hours of truly unstructured time daily—time without screens, organized activities, or adult direction.</p>
-      <p><strong>How it helps:</strong> Unstructured time allows for mind-wandering, a cognitive state strongly associated with creative insight and divergent thinking.</p>
-      
-      <h4>2. Ask More Open Questions</h4>
-      <p><strong>What to do:</strong> Replace closed questions ("Is this a bird?") with open ones ("What do you think this creature might eat? Where might it live?").</p>
-      <p><strong>How it helps:</strong> Open questions signal that multiple answers are possible and valued, encouraging cognitive flexibility.</p>
-      
-      <h4>3. Delay Gratification Systematically</h4>
-      <p><strong>What to do:</strong> When your child wants something, create reasonable waiting periods appropriate to their age. For example, institute a "24-hour rule" for non-essential purchases.</p>
-      <p><strong>How it helps:</strong> Delayed gratification builds the patience needed for sustained creative effort and reduces impulsivity.</p>
-      
-      <h4>4. Normalize Productive Failure</h4>
-      <p><strong>What to do:</strong> Share your own creative struggles and iterations. Create a family mantra: "First attempts rarely work—that's how we learn!"</p>
-      <p><strong>How it helps:</strong> Reduces fear of imperfection that blocks creative risk-taking.</p>
-      
-      <h4>5. Create Constraint-Based Challenges</h4>
-      <p><strong>What to do:</strong> Set creative problems with specific limitations: "Create a game using only items in this room" or "Solve this problem without spending any money."</p>
-      <p><strong>How it helps:</strong> Constraints paradoxically expand creative thinking by forcing novel pathways.</p>
-      
-      <h4>6. Designate Creation Stations</h4>
-      <p><strong>What to do:</strong> Create accessible spaces with open-ended materials (art supplies, building elements, natural objects) that don't require adult setup or cleanup.</p>
-      <p><strong>How it helps:</strong> Removes barriers to spontaneous creative expression.</p>
-      
-      <h4>7. Practice Idea Quantity</h4>
-      <p><strong>What to do:</strong> Make "How many ways...?" questions part of daily conversation. "How many ways could we reuse this empty box? How many different endings could this story have?"</p>
-      <p><strong>How it helps:</strong> Quantity of ideas leads to quality of ideas, and practicing divergent thinking makes it habitual.</p>
-      
-      <h3>The Creativity-Nurturing Language Shift</h3>
-      
-      <p>The words we use shape how children understand creativity. Consider shifting your language:</p>
-      
-      <p><strong>Instead of:</strong> "That's not how you do it."
-      <br><strong>Try:</strong> "That's an interesting approach. What made you think of doing it that way?"</p>
-      
-      <p><strong>Instead of:</strong> "Let me show you how."
-      <br><strong>Try:</strong> "What do you think might work here?"</p>
-      
-      <p><strong>Instead of:</strong> "That's wrong."
-      <br><strong>Try:</strong> "That didn't work as expected. What did we learn from it?"</p>
-      
-      <p><strong>Instead of:</strong> "Be careful!"
-      <br><strong>Try:</strong> "I trust you to try this carefully."</p>
-      
-      <h3>Creating a Creativity Portfolio</h3>
-      
-      <p>Rather than focusing exclusively on academic achievement, help your child develop a "creativity portfolio"—a collection of problems they've solved, ideas they've implemented, or projects they've designed. This tangible record of creative capability builds confidence and creates a narrative of creative self-identity that can withstand the conformity pressures of adolescence.</p>
-      
-      <p>Remember that creativity isn't a fixed trait but a capacity that grows with practice. By implementing these strategies consistently, you protect not just your child's creative thinking abilities but their future capacity to thrive in an increasingly uncertain world.</p>
-    `
-  },
-  {
-    title: "Emotional Intelligence: The Key to Future Success",
-    description: "How developing emotional awareness and regulation skills impacts academic achievement and career success.",
-    type: "Article",
-    link: "#emotional-intelligence",
-    ageGroup: "All Ages",
-    category: "Emotional Intelligence",
-    readTime: "6 min",
-    content: `
-      <h2>Emotional Intelligence: The Key to Future Success</h2>
-      
-      <p>While academic achievement and technical skills receive significant parental focus, research increasingly shows that emotional intelligence (EQ) may be the most reliable predictor of future success and well-being. Here's why it matters and how to develop it in your child.</p>
-      
-      <h3>What is Emotional Intelligence?</h3>
-      
-      <p>Emotional intelligence encompasses five key components:</p>
-      
-      <p><strong>Self-awareness:</strong> The ability to recognize and name one's own emotions.</p>
-      
-      <p><strong>Self-regulation:</strong> Managing emotions effectively, especially during challenging situations.</p>
-      
-      <p><strong>Motivation:</strong> Using emotions to pursue goals with energy and persistence.</p>
-      
-      <p><strong>Empathy:</strong> Recognizing and responding appropriately to others' emotions.</p>
-      
-      <p><strong>Social skills:</strong> Managing relationships and navigating social complexities.</p>
-      
-      <h3>Why Emotional Intelligence Matters</h3>
-      
-      <p>Research from multiple fields highlights the profound impact of emotional intelligence:</p>
-      
-      <p><strong>Academic performance:</strong> Students with higher EQ earn better grades, even when controlling for IQ.</p>
-      
-      <p><strong>Workplace success:</strong> 90% of top performers have high emotional intelligence, and EQ accounts for 58% of success in professional roles.</p>
-      
-      <p><strong>Mental health:</strong> Higher EQ correlates with greater resilience and lower rates of anxiety and depression.</p>
-      
-      <p><strong>Leadership effectiveness:</strong> 85% of leadership effectiveness is attributed to emotional intelligence factors.</p>
-      
-      <p><strong>Income potential:</strong> People with high EQ earn an average of $29,000 more annually than those with low EQ.</p>
-      
-      <h3>Developmental Timeline of Emotional Intelligence</h3>
-      
-      <p>Emotional intelligence develops in a relatively predictable sequence:</p>
-      
-      <p><strong>Ages 3-5:</strong> Basic emotion recognition and labeling (happy, sad, angry, scared)</p>
-      
-      <p><strong>Ages 6-8:</strong> Understanding emotional complexity (feeling multiple emotions simultaneously)</p>
-      
-      <p><strong>Ages 9-11:</strong> Developing emotional cause-and-effect thinking</p>
-      
-      <p><strong>Ages 12-14:</strong> Advanced empathy and perspective-taking</p>
-      
-      <p><strong>Ages 15-18:</strong> Integration of emotional insight with identity development</p>
-      
-      <h3>Key EQ Skills to Develop</h3>
-      
-      <p>Beyond the broad components above, focus on these specific capacities:</p>
-      
-      <p><strong>Emotional Vocabulary:</strong> The ability to precisely name emotions beyond basic labels (distinguishing between disappointment, discouragement, and despondency, for example).</p>
-      
-      <p><strong>Emotional Prediction:</strong> Anticipating how certain situations might make oneself and others feel.</p>
-      
-      <p><strong>Response Flexibility:</strong> Having multiple ways to respond to emotional situations rather than rigid reactions.</p>
-      
-      <p><strong>Emotional Regulation Strategies:</strong> Specific techniques for managing strong emotions.</p>
-      
-      <p><strong>Recovery Speed:</strong> The ability to return to baseline after emotional activation.</p>
-      
-      <p><strong>Optimistic Thinking:</strong> A hopeful outlook that sees challenges as temporary and specific rather than permanent and pervasive.</p>
-      
-      <h3>Practical EQ Development Strategies</h3>
-      
-      <h4>For Ages 3-7</h4>
-      
-      <p><strong>Emotion naming game:</strong> Throughout the day, help your child label emotions they're experiencing: "You look frustrated with that puzzle." Use specific words beyond just "happy" or "sad."</p>
-      
-      <p><strong>Feelings thermometer:</strong> Create a visual scale from 1-5 for intensity of emotions. Ask your child to show you where their feelings are on the thermometer.</p>
-      
-      <p><strong>Story-based empathy:</strong> While reading books, ask how different characters might be feeling and why.</p>
-      
-      <p><strong>Calm-down corner:</strong> Create a space with comfort items, feeling charts, and simple self-regulation tools like glitter jars or breathing prompts.</p>
-      
-      <h4>For Ages 8-12</h4>
-      
-      <p><strong>Emotional journaling:</strong> Encourage recording feelings about daily events, perhaps using prompts like "I felt... when... because..."</p>
-      
-      <p><strong>Regulation strategy collection:</strong> Help your child develop a personalized set of techniques for managing strong emotions (deep breathing, physical movement, visualization, etc.).</p>
-      
-      <p><strong>Perspective circles:</strong> When conflicts arise, draw three concentric circles representing: "How I feel," "How the other person might feel," and "What a neutral observer might think."</p>
-      
-      <p><strong>Media analysis:</strong> Discuss emotional dynamics in age-appropriate shows or books, asking about character motivations and emotional responses.</p>
-      
-      <h4>For Ages 13-18</h4>
-      
-      <p><strong>Cognitive reframing practice:</strong> Help teens identify negative thought patterns and develop alternative interpretations of challenging situations.</p>
-      
-      <p><strong>Social dynamic mapping:</strong> Discuss the emotional undercurrents in social situations, helping them read subtle cues and unstated feelings.</p>
-      
-      <p><strong>Value-emotion connections:</strong> Explore how our deepest values influence our emotional responses to situations.</p>
-      
-      <p><strong>Mentoring younger children:</strong> Create opportunities for teens to teach emotional skills to younger children, which reinforces their own emotional intelligence.</p>
-      
-      <h3>Supporting Your Own Emotional Intelligence</h3>
-      
-      <p>Children learn emotional intelligence primarily through observation and experience rather than instruction. The most important factor in your child's EQ development is likely your own emotional awareness, regulation, and communication.</p>
-      
-      <p>Consider these practices:</p>
-      
-      <p><strong>Emotion narration:</strong> Share your own feelings and regulation strategies: "I'm feeling frustrated right now, so I'm going to take three deep breaths before responding."</p>
-      
-      <p><strong>Repair after dysregulation:</strong> When you do lose emotional control (as all parents sometimes do), demonstrate healthy repair: "I'm sorry I yelled. I was feeling overwhelmed, but that wasn't a helpful way to handle it."</p>
-      
-      <p><strong>Non-judgmental listening:</strong> Create safety for emotional expression by receiving feelings without immediate judgment or problem-solving.</p>
-      
-      <p><strong>Emotional coaching:</strong> Guide rather than direct emotional processing: "What do you think might help you feel better right now?"</p>
-      
-      <h3>The Future Advantage</h3>
-      
-      <p>As artificial intelligence and automation transform the workplace, emotional intelligence becomes increasingly valuable. Machines excel at logic and computation but struggle with emotional nuance, interpersonal sensitivity, and ethical reasoning—precisely the domains where emotional intelligence operates.</p>
-      
-      <p>By developing your child's emotional intelligence now, you're preparing them not just for academic and career success, but for meaningful relationships, effective leadership, and personal fulfillment in an increasingly complex world.</p>
-    `
-  },
-  {
-    title: "Digital Literacy: Beyond Screen Time Debates",
-    description: "Essential digital competencies children need to develop for effective, ethical technology use.",
-    type: "Guide",
-    link: "#digital-literacy",
-    ageGroup: "Ages 8-18",
+    ageGroup: "Ages 8-12",
     category: "Digital Literacy",
-    readTime: "7 min",
+    link: "#online-privacy",
     content: `
-      <h2>Digital Literacy: Beyond Screen Time Debates</h2>
+      <div class="mb-6">
+        <p>In today's digital world, children need to understand how to protect their personal information online. This guide will help you teach them important privacy skills.</p>
+      </div>
       
-      <p>The conversation about children and technology often centers on screen time limits—how much is too much? While duration matters, what's more important is developing comprehensive digital literacy—the ability to use, understand, evaluate, and create with digital technologies safely and effectively.</p>
-      
-      <p>This guide shifts the focus from time restrictions to competency development, outlining the essential digital skills children need at different developmental stages.</p>
-      
-      <h3>Core Digital Literacy Domains</h3>
-      
-      <p>Effective digital literacy encompasses five interconnected domains:</p>
-      
-      <h4>1. Technical Fluency</h4>
-      <p>The ability to operate devices and software, troubleshoot problems, and adapt to new technologies.</p>
-      
-      <h4>2. Information Literacy</h4>
-      <p>The skills to find, evaluate, organize, and use digital information effectively and ethically.</p>
-      
-      <h4>3. Digital Safety & Security</h4>
-      <p>Knowledge and practices that protect personal data, privacy, and well-being in digital environments.</p>
-      
-      <h4>4. Media Literacy</h4>
-      <p>The capacity to access, analyze, evaluate, and create media in various forms.</p>
-      
-      <h4>5. Digital Citizenship</h4>
-      <p>Understanding rights, responsibilities, and opportunities of living and participating in the digital world.</p>
-      
-      <h3>Developmental Sequence: Building Block Approach</h3>
-      
-      <p>Digital literacy should develop progressively, with age-appropriate skills building on previous foundations:</p>
-      
-      <h4>Early Foundations (Ages 5-7)</h4>
-      
-      <p>During this stage, focus on establishing basic concepts and supervised exploration:</p>
-      
-      <p><strong>Technical skills:</strong></p>
-      <ul>
-        <li>Basic device navigation (turning on/off, opening apps)</li>
-        <li>Introduction to simple inputs (touchscreen, mouse, keyboard)</li>
-        <li>Understanding digital vs. physical objects</li>
+      <h2 class="text-xl font-bold mb-3 mt-6">Why Online Privacy Matters</h2>
+      <p>Teaching children about privacy helps:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Protect them from online risks</li>
+        <li>Build good digital habits early</li>
+        <li>Prepare them for responsible technology use</li>
+        <li>Give them control over their digital footprint</li>
       </ul>
       
-      <p><strong>Key concepts:</strong></p>
-      <ul>
-        <li>Digital content permanence ("once online, always online")</li>
-        <li>The difference between real and pretend in digital contexts</li>
-        <li>Basic online courtesy</li>
-        <li>Personal information awareness</li>
+      <h2 class="text-xl font-bold mb-3 mt-6">Privacy Checklist for Parents</h2>
+      
+      <div class="bg-gray-50 p-4 rounded-lg mb-6">
+        <h3 class="font-semibold mb-3">Device Setup:</h3>
+        <ul class="space-y-2">
+          <li>
+            <label class="flex items-start">
+              <input type="checkbox" class="mt-1 mr-2">
+              <span>Set up parental controls on all devices</span>
+            </label>
+          </li>
+          <li>
+            <label class="flex items-start">
+              <input type="checkbox" class="mt-1 mr-2">
+              <span>Create separate user accounts for each child</span>
+            </label>
+          </li>
+          <li>
+            <label class="flex items-start">
+              <input type="checkbox" class="mt-1 mr-2">
+              <span>Enable safe search on browsers</span>
+            </label>
+          </li>
+          <li>
+            <label class="flex items-start">
+              <input type="checkbox" class="mt-1 mr-2">
+              <span>Review privacy settings on apps and games</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="bg-gray-50 p-4 rounded-lg mb-6">
+        <h3 class="font-semibold mb-3">Conversations to Have:</h3>
+        <ul class="space-y-2">
+          <li>
+            <label class="flex items-start">
+              <input type="checkbox" class="mt-1 mr-2">
+              <span>Explain what personal information is</span>
+            </label>
+          </li>
+          <li>
+            <label class="flex items-start">
+              <input type="checkbox" class="mt-1 mr-2">
+              <span>Discuss why we keep some information private</span>
+            </label>
+          </li>
+          <li>
+            <label class="flex items-start">
+              <input type="checkbox" class="mt-1 mr-2">
+              <span>Talk about password safety</span>
+            </label>
+          </li>
+          <li>
+            <label class="flex items-start">
+              <input type="checkbox" class="mt-1 mr-2">
+              <span>Explain data collection (how websites gather information)</span>
+            </label>
+          </li>
+          <li>
+            <label class="flex items-start">
+              <input type="checkbox" class="mt-1 mr-2">
+              <span>Discuss digital footprints and how they last</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">What is Personal Information?</h2>
+      <p>Help your child understand what should be kept private:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Never Share:</strong> Full name, home address, phone number, school name, passwords</li>
+        <li><strong>Share Carefully:</strong> Photos, interests, general location (city), age range (not exact age)</li>
+        <li><strong>Usually OK to Share:</strong> Hobbies, favorite books/movies, opinions about general topics</li>
       </ul>
       
-      <p><strong>Recommended activities:</strong></p>
-      <ul>
-        <li>Co-browsing storytelling apps or educational games</li>
-        <li>Creating simple digital art or stories</li>
-        <li>Talking about ads vs. content in apps</li>
+      <h2 class="text-xl font-bold mb-3 mt-6">Privacy Activities for Children</h2>
+      
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 8-12:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Information sorting:</strong> Make cards with different types of information and sort them into "private" and "OK to share" piles</li>
+        <li><strong>Password creation game:</strong> Practice making strong passwords together</li>
+        <li><strong>App review:</strong> Look at privacy settings on their favorite apps together</li>
+        <li><strong>Digital footprint activity:</strong> Do a family-supervised search of your own name to see what appears</li>
       </ul>
       
-      <h4>Building Competence (Ages 8-11)</h4>
-      
-      <p>As children develop abstract thinking capabilities, expand to:</p>
-      
-      <p><strong>Technical skills:</strong></p>
-      <ul>
-        <li>File organization and management</li>
-        <li>Basic troubleshooting strategies</li>
-        <li>Introduction to simple programming concepts</li>
-        <li>Word processing and digital presentation basics</li>
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 13-18:</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Privacy audit:</strong> Review all social media settings together</li>
+        <li><strong>Terms of service exercise:</strong> Look at an app's terms together and discuss</li>
+        <li><strong>Data tracking discussion:</strong> Talk about targeted ads they notice</li>
+        <li><strong>Future impact exercise:</strong> Discuss how today's posts might look to future employers</li>
       </ul>
       
-      <p><strong>Information & media skills:</strong></p>
-      <ul>
-        <li>Basic search strategies</li>
-        <li>Identifying online information sources</li>
-        <li>Introduction to fact-checking</li>
-        <li>Understanding digital content creation</li>
-      </ul>
+      <h2 class="text-xl font-bold mb-3 mt-6">5 Privacy Rules for Kids</h2>
+      <ol class="list-decimal pl-6 mb-4 space-y-3">
+        <li><strong>Think before sharing:</strong> "Would I be OK if everyone saw this forever?"</li>
+        <li><strong>Use strong passwords:</strong> Create unique passwords and don't share them</li>
+        <li><strong>Check before downloading:</strong> Ask permission before installing new apps</li>
+        <li><strong>Be careful with photos:</strong> Check what's in the background before sharing</li>
+        <li><strong>Tell a trusted adult:</strong> Report anything that feels uncomfortable online</li>
+      </ol>
       
-      <p><strong>Digital citizenship:</strong></p>
-      <ul>
-        <li>Password security and management</li>
-        <li>Responsible online communication</li>
-        <li>Understanding digital footprints</li>
-        <li>Recognizing inappropriate content and knowing what to do</li>
-      </ul>
-      
-      <p><strong>Recommended activities:</strong></p>
-      <ul>
-        <li>Creating a family media agreement together</li>
-        <li>Researching a topic of interest with guided evaluation</li>
-        <li>Introducing collaborative digital projects</li>
-        <li>"Spot the misleading information" games</li>
-      </ul>
-      
-      <h4>Expanding Capability (Ages 12-14)</h4>
-      
-      <p>As social dynamics become more complex, focus on:</p>
-      
-      <p><strong>Technical skills:</strong></p>
-      <ul>
-        <li>Advanced search techniques</li>
-        <li>Introduction to content creation tools</li>
-        <li>Understanding basic networking concepts</li>
-        <li>Cloud computing and cross-device synchronization</li>
-      </ul>
-      
-      <p><strong>Information & media skills:</strong></p>
-      <ul>
-        <li>Evaluating credibility of sources</li>
-        <li>Understanding filter bubbles and algorithmic curation</li>
-        <li>Recognizing different content types (news, opinion, advertising, entertainment)</li>
-        <li>Digital media analysis techniques</li>
-      </ul>
-      
-      <p><strong>Digital citizenship:</strong></p>
-      <ul>
-        <li>Social media literacy and etiquette</li>
-        <li>Managing digital distractions</li>
-        <li>Understanding online privacy settings</li>
-        <li>Recognizing and responding to cyberbullying</li>
-        <li>Digital reputation management</li>
-      </ul>
-      
-      <p><strong>Recommended activities:</strong></p>
-      <ul>
-        <li>Creating purpose-driven digital content</li>
-        <li>Analyzing media messages across platforms</li>
-        <li>Digital well-being audit and planning</li>
-        <li>Guided social media exploration with reflection</li>
-      </ul>
-      
-      <h4>Advanced Integration (Ages 15-18)</h4>
-      
-      <p>As teens prepare for adult independence, emphasize:</p>
-      
-      <p><strong>Technical skills:</strong></p>
-      <ul>
-        <li>Productivity software mastery</li>
-        <li>Basic data analysis and visualization</li>
-        <li>Introduction to advanced content creation</li>
-        <li>Understanding emerging technologies and their implications</li>
-      </ul>
-      
-      <p><strong>Information & media skills:</strong></p>
-      <ul>
-        <li>Advanced information evaluation strategies</li>
-        <li>Understanding confirmation bias and misinformation dynamics</li>
-        <li>Critical analysis of data presentation</li>
-        <li>Cross-platform research techniques</li>
-      </ul>
-      
-      <p><strong>Digital citizenship:</strong></p>
-      <ul>
-        <li>Professional online presence development</li>
-        <li>Understanding digital rights and responsibilities</li>
-        <li>Ethical technology use</li>
-        <li>Digital activism and civic engagement</li>
-        <li>Understanding digital economics and business models</li>
-      </ul>
-      
-      <p><strong>Recommended activities:</strong></p>
-      <ul>
-        <li>Creating a positive online portfolio</li>
-        <li>Engaging in structured digital citizenship projects</li>
-        <li>Analyzing ethical dilemmas in technology</li>
-        <li>Participating in collaborative digital creation</li>
-      </ul>
-      
-      <h3>Implementation Strategies for Parents</h3>
-      
-      <p>To develop these competencies effectively:</p>
-      
-      <h4>1. Prioritize Active Over Passive</h4>
-      <p>Emphasize creative, interactive experiences rather than passive consumption. Even high-quality educational content is less valuable than hands-on digital creation and problem-solving.</p>
-      
-      <h4>2. Co-Use Before Solo Use</h4>
-      <p>Introduce new technologies, platforms, or skills through side-by-side exploration before independent use. This allows for real-time guidance on both technical and ethical dimensions.</p>
-      
-      <h4>3. Embed in Interest Areas</h4>
-      <p>Connect digital literacy development to your child's existing passions. A child interested in space might learn search techniques by researching astronomy, or a child who loves stories might create digital narratives.</p>
-      
-      <h4>4. Create Reflection Habits</h4>
-      <p>Establish regular conversations about digital experiences. Simple questions like "What surprised you online today?" or "How did that make you feel?" build metacognitive awareness about digital interactions.</p>
-      
-      <h4>5. Balance Prevention and Empowerment</h4>
-      <p>While protecting children from inappropriate content and experiences is important, equally emphasize developing their internal judgment and decision-making capabilities.</p>
-      
-      <h3>Navigating Key Challenges</h3>
-      
-      <h4>The Privacy Paradox</h4>
-      <p>Help children understand the trade-offs between convenience and privacy, and the difference between secrecy (hiding behaviors) and privacy (controlling personal information).</p>
-      
-      <h4>Attention Engineering</h4>
-      <p>Teach awareness of how digital platforms are designed to capture and retain attention, and develop strategies for intentional rather than reactive technology use.</p>
-      
-      <h4>Digital Well-being</h4>
-      <p>Support children in recognizing how different digital activities affect their mood, energy, and relationships, enabling them to make self-aware choices.</p>
-      
-      <p>By focusing on these comprehensive digital literacy domains rather than simply restricting screen time, you provide your child with the skills they need to navigate an increasingly digital world with competence, critical thinking, and ethical awareness.</p>
+      <div class="bg-blue-50 p-4 rounded-lg mt-6">
+        <h3 class="font-semibold mb-2">Privacy Tip:</h3>
+        <p>Review privacy settings together every few months. Many apps and platforms change their settings, and this regular check keeps everyone's information safe.</p>
+      </div>
     `
   },
   {
-    title: "Raising Financially Intelligent Kids: A Developmental Roadmap",
-    description: "Age-appropriate financial concepts and activities that build money smarts from preschool through high school.",
-    type: "Framework",
-    link: "#financial-roadmap",
-    ageGroup: "All Ages",
-    category: "Financial Intelligence",
-    readTime: "9 min",
-    content: `
-      <h2>Raising Financially Intelligent Kids: A Developmental Roadmap</h2>
-      
-      <p>Financial intelligence—the ability to make informed decisions about money management, earning, saving, and spending—is increasingly recognized as a critical life skill. Yet many parents feel uncertain about when and how to introduce financial concepts to their children.</p>
-      
-      <p>This developmental framework provides a structured approach to building financial intelligence across childhood and adolescence, with specific competency targets and practical activities for each stage.</p>
-      
-      <h3>Foundation Phase (Ages 3-6)</h3>
-      
-      <p><strong>Core developmental capabilities:</strong></p>
-      <ul>
-        <li>Beginning to delay gratification</li>
-        <li>Developing basic counting and number sense</li>
-        <li>Understanding simple cause-effect relationships</li>
-        <li>Distinguishing between wants and needs</li>
-      </ul>
-      
-      <p><strong>Financial competencies to develop:</strong></p>
-      <ul>
-        <li>Money recognition (identifying coins and bills)</li>
-        <li>Understanding that money is exchanged for goods</li>
-        <li>Recognizing the concept of earning</li>
-        <li>Introducing the habits of saving and sharing</li>
-        <li>Beginning to understand advertising vs. content</li>
-      </ul>
-      
-      <p><strong>Key concepts to introduce:</strong></p>
-      <ul>
-        <li>Money comes from work</li>
-        <li>We can use money now or save it for later</li>
-        <li>Some things we want, some things we need</li>
-        <li>We can share money to help others</li>
-      </ul>
-      
-      <p><strong>Effective activities:</strong></p>
-      <ul>
-        <li><strong>Three jar system:</strong> Create separate containers for "Spend," "Save," and "Share" with clear guidelines for dividing money received.</li>
-        <li><strong>Store game:</strong> Set up a pretend store at home with price tags on items to practice exchange concepts.</li>
-        <li><strong>Want vs. need sorting:</strong> Cut out pictures from magazines and sort them into "wants" and "needs" categories.</li>
-        <li><strong>Earning opportunities:</strong> Create simple, age-appropriate tasks that allow earning small amounts (helping sort laundry, picking up toys).</li>
-      </ul>
-      
-      <p><strong>Common mistakes to avoid:</strong></p>
-      <ul>
-        <li>Using money as a reward for basic expectations or responsibilities</li>
-        <li>Creating anxiety around scarcity</li>
-        <li>Setting saving goals that are too distant for young children's time perception</li>
-      </ul>
-      
-      <h3>Conceptual Phase (Ages 7-10)</h3>
-      
-      <p><strong>Core developmental capabilities:</strong></p>
-      <ul>
-        <li>More sophisticated understanding of time</li>
-        <li>Beginning to understand abstract concepts</li>
-        <li>Developing planning capabilities</li>
-        <li>Growing awareness of social comparison</li>
-      </ul>
-      
-      <p><strong>Financial competencies to develop:</strong></p>
-      <ul>
-        <li>Price comparison and basic shopping decisions</li>
-        <li>Short-term saving for specific goals</li>
-        <li>Understanding different ways money is earned</li>
-        <li>Introduction to banking concepts</li>
-        <li>Basic budgeting for simple categories</li>
-        <li>Recognizing marketing tactics</li>
-      </ul>
-      
-      <p><strong>Key concepts to introduce:</strong></p>
-      <ul>
-        <li>Opportunity cost (choosing one thing means not choosing something else)</li>
-        <li>Interest (money can earn more money)</li>
-        <li>Different types of work provide different income</li>
-        <li>Planning ahead prevents problems</li>
-      </ul>
-      
-      <p><strong>Effective activities:</strong></p>
-      <ul>
-        <li><strong>Comparison shopping:</strong> Give children a specific budget for a small purchase and help them research options to make the best choice.</li>
-        <li><strong>Savings account:</strong> Open a real bank account and track deposits, withdrawals, and interest.</li>
-        <li><strong>Entrepreneurial project:</strong> Support a simple money-earning venture (lemonade stand, craft sale, helping neighbors).</li>
-        <li><strong>Budget game:</strong> Create a simple budget for a family outing or special event.</li>
-        <li><strong>Ad detective:</strong> Analyze commercials or online ads to identify persuasion techniques.</li>
-      </ul>
-      
-      <p><strong>Common mistakes to avoid:</strong></p>
-      <ul>
-        <li>Shielding children from all financial realities and trade-offs</li>
-        <li>Making money topics taboo or uncomfortable</li>
-        <li>Missing teachable moments during regular activities</li>
-      </ul>
-      
-      <h3>Operational Phase (Ages 11-14)</h3>
-      
-      <p><strong>Core developmental capabilities:</strong></p>
-      <ul>
-        <li>Emerging abstract thinking</li>
-        <li>Greater independence in decision-making</li>
-        <li>Increased peer influence</li>
-        <li>Growing concern with identity</li>
-      </ul>
-      
-      <p><strong>Financial competencies to develop:</strong></p>
-      <ul>
-        <li>Medium-term financial planning</li>
-        <li>Understanding digital money and online transactions</li>
-        <li>Distinguishing between types of financial accounts</li>
-        <li>Tracking personal spending patterns</li>
-        <li>Recognizing the relationship between education, skills, and earning potential</li>
-        <li>Understanding compound interest (both saving and debt)</li>
-      </ul>
-      
-      <p><strong>Key concepts to introduce:</strong></p>
-      <ul>
-        <li>Compound growth over time</li>
-        <li>The difference between price and value</li>
-        <li>Risk and reward relationships</li>
-        <li>Consumer rights and responsibilities</li>
-        <li>Digital money safety</li>
-      </ul>
-      
-      <p><strong>Effective activities:</strong></p>
-      <ul>
-        <li><strong>Compound interest calculator:</strong> Show the dramatic effects of compound interest over decades with different savings amounts.</li>
-        <li><strong>Spending tracker:</strong> Use an app or spreadsheet to categorize and analyze personal spending for insights.</li>
-        <li><strong>Career exploration:</strong> Research education requirements, lifestyle costs, and income potential for careers of interest.</li>
-        <li><strong>Product research project:</strong> Compare features, reviews, and prices for a desired item before purchasing.</li>
-        <li><strong>Guided investment:</strong> Help them invest a small amount in a stock they choose after research, tracking performance over time.</li>
-      </ul>
-      
-      <p><strong>Common mistakes to avoid:</strong></p>
-      <ul>
-        <li>Giving too much financial freedom without guidance</li>
-        <li>Focusing exclusively on saving without addressing earning and investing</li>
-        <li>Imposing rigid systems that don't allow for personal financial style</li>
-      </ul>
-      
-      <h3>Strategic Phase (Ages 15-18)</h3>
-      
-      <p><strong>Core developmental capabilities:</strong></p>
-      <ul>
-        <li>Advanced abstract thinking</li>
-        <li>Future orientation and planning</li>
-        <li>Identity consolidation</li>
-        <li>Increasing autonomy in decision-making</li>
-      </ul>
-      
-      <p><strong>Financial competencies to develop:</strong></p>
-      <ul>
-        <li>Understanding credit and debt management</li>
-        <li>Complex budgeting across categories</li>
-        <li>Long-term financial planning</li>
-        <li>Basic investment principles</li>
-        <li>Understanding taxes and employment benefits</li>
-        <li>Insurance concepts and risk management</li>
-        <li>Education financing options and implications</li>
-      </ul>
-      
-      <p><strong>Key concepts to introduce:</strong></p>
-      <ul>
-        <li>Financial independence and security</li>
-        <li>Asset allocation and diversification</li>
-        <li>The true cost of debt</li>
-        <li>Financial systems and how they function</li>
-        <li>Philanthropy and impact investing</li>
-      </ul>
-      
-      <p><strong>Effective activities:</strong></p>
-      <ul>
-        <li><strong>College financing planning:</strong> Analyze education costs, potential debt, expected earnings, and ROI for different paths.</li>
-        <li><strong>Mock investment portfolio:</strong> Create and track a diversified investment portfolio with regular reviews.</li>
-        <li><strong>Credit simulation:</strong> Explain credit scores, interest rates, and the long-term implications of different credit behaviors.</li>
-        <li><strong>Life launch budget:</strong> Create a realistic post-graduation budget including all independent living expenses.</li>
-        <li><strong>Tax return completion:</strong> Guide them through preparing their own tax return if they have earned income.</li>
-        <li><strong>Financial independence roadmap:</strong> Help them create a visualization of their path to financial independence.</li>
-      </ul>
-      
-      <p><strong>Common mistakes to avoid:</strong></p>
-      <ul>
-        <li>Solving financial problems for them rather than collaboratively</li>
-        <li>Delaying real-world financial experiences until after high school</li>
-        <li>Sending mixed messages about money through your own behaviors</li>
-      </ul>
-      
-      <h3>Implementation Principles</h3>
-      
-      <p>Across all developmental stages, these principles enhance financial intelligence development:</p>
-      
-      <h4>1. Link Abstract to Concrete</h4>
-      <p>Always connect abstract financial concepts to tangible experiences. For example, don't just explain compound interest—demonstrate it visually and experientially.</p>
-      
-      <h4>2. Create Natural Consequences</h4>
-      <p>Allow children to experience the natural outcomes of their financial decisions, both positive and negative, while the stakes are still low.</p>
-      
-      <h4>3. Share Your Process</h4>
-      <p>Narrate your own financial decision-making (appropriately to their age), making visible the thinking that is normally hidden. "I'm choosing this option because..."</p>
-      
-      <h4>4. Practice Before Independence</h4>
-      <p>For each new financial responsibility, create a supervised practice period before full independence.</p>
-      
-      <h4>5. Connect to Values</h4>
-      <p>Consistently frame financial education within your family's core values about purpose, generosity, security, and responsibility.</p>
-      
-      <p>By following this developmental approach, you can systematically build your child's financial capabilities, preparing them for the increasingly complex financial landscape they will navigate as adults.</p>
-    `
-  },
-  {
-    title: "Communication Skills for Future Leaders",
-    description: "Essential verbal and non-verbal communication abilities that set children apart in academic and professional settings.",
+    id: 7,
+    title: "Creativity Exercises for Every Age",
+    description: "Fun activities to develop creative thinking and innovation skills in children",
     type: "Guide",
-    link: "#communication-leaders",
-    ageGroup: "Ages 8-18",
-    category: "Communication",
     readTime: "6 min",
+    ageGroup: "All Ages",
+    category: "All Skills",
+    link: "#creativity-exercises",
     content: `
-      <h2>Communication Skills for Future Leaders</h2>
+      <div class="mb-6">
+        <p>Creativity is a vital skill for future success. Creative thinkers solve problems, innovate, and adapt to new situations. These simple activities can help develop your child's creative thinking.</p>
+      </div>
       
-      <p>Effective communication remains the most consistently valued professional skill across industries, with 91% of employers rating it as critical for career advancement. For children who will enter a workforce increasingly dominated by AI and automation, sophisticated communication abilities will be their most distinctive human advantage.</p>
-      
-      <p>This guide outlines the essential communication competencies that distinguish exceptional communicators, with developmental insights and practical strategies for nurturing these abilities.</p>
-      
-      <h3>Core Communication Competencies</h3>
-      
-      <h4>1. Precision Language</h4>
-      
-      <p><strong>What it involves:</strong> The ability to select words with accuracy and specificity, avoiding vagueness and ambiguity.</p>
-      
-      <p><strong>Why it matters:</strong> Precise language prevents misunderstandings, demonstrates expertise, and creates clarity in complex situations.</p>
-      
-      <p><strong>Developmental path:</strong></p>
-      <ul>
-        <li><strong>Ages 8-10:</strong> Expanding vocabulary through word collection and categorization.</li>
-        <li><strong>Ages 11-14:</strong> Learning to replace generic words (good, bad, nice) with specific alternatives.</li>
-        <li><strong>Ages 15-18:</strong> Mastering domain-specific vocabulary and developing nuanced expression of complex ideas.</li>
+      <h2 class="text-xl font-bold mb-3 mt-6">Why Creativity Matters</h2>
+      <p>Creative thinking helps children:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Find unique solutions to problems</li>
+        <li>Express themselves confidently</li>
+        <li>Think flexibly in different situations</li>
+        <li>Develop innovation skills for future careers</li>
+        <li>Find joy in learning and exploring</li>
       </ul>
       
-      <p><strong>Development strategy:</strong> Institute a "word of the day" practice with prizes for using the word accurately in context. For older children, challenge them to rewrite vague statements with greater precision.</p>
+      <h2 class="text-xl font-bold mb-3 mt-6">Creativity Exercises By Age</h2>
       
-      <h4>2. Structural Clarity</h4>
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 3-7:</h3>
+      <ol class="list-decimal pl-6 mb-4 space-y-2">
+        <li><strong>Storytelling Box:</strong> Fill a box with random objects. Pull out 3 items and make up a story using them.</li>
+        <li><strong>What Else Could It Be?:</strong> Show everyday objects and ask, "What else could this be?" (e.g., a spoon could be a boat, a microphone, or a magic wand)</li>
+        <li><strong>Imagination Walk:</strong> Take a walk outside and imagine fantastic elements (fairy houses in trees, dragons in clouds)</li>
+        <li><strong>Draw to Music:</strong> Play different types of music and draw how it makes you feel</li>
+        <li><strong>Puppet Stories:</strong> Make simple puppets from socks or paper bags and create shows</li>
+      </ol>
       
-      <p><strong>What it involves:</strong> Organizing communication in logical sequences with clear transitions and hierarchies of information.</p>
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 8-12:</h3>
+      <ol class="list-decimal pl-6 mb-4 space-y-2">
+        <li><strong>Invention Challenge:</strong> Identify a household problem and design a solution</li>
+        <li><strong>Newspaper Blackout Poetry:</strong> Use a marker to black out words in a newspaper, leaving only words that create a poem</li>
+        <li><strong>Alternate Endings:</strong> Rewrite the ending to a favorite story or movie</li>
+        <li><strong>Recycled Art:</strong> Create sculptures using only recyclable materials</li>
+        <li><strong>Mind Mapping:</strong> Create visual mind maps for ideas or projects</li>
+      </ol>
       
-      <p><strong>Why it matters:</strong> Well-structured communication is significantly more persuasive and memorable than disorganized content, regardless of quality.</p>
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 13-18:</h3>
+      <ol class="list-decimal pl-6 mb-4 space-y-2">
+        <li><strong>30 Circles Challenge:</strong> Draw 30 circles on paper and fill each with a different drawing in 3 minutes</li>
+        <li><strong>Reverse Brainstorming:</strong> Instead of solving a problem, list ways to make it worse (then reverse those ideas)</li>
+        <li><strong>Photo Challenge:</strong> Take photos based on abstract themes like "freedom" or "change"</li>
+        <li><strong>What If Scenarios:</strong> Explore hypothetical situations ("What if humans could fly?")</li>
+        <li><strong>Creative Constraints:</strong> Create something with strict limitations (a story using only 50 words, art using only one color)</li>
+      </ol>
       
-      <p><strong>Developmental path:</strong></p>
-      <ul>
-        <li><strong>Ages 8-10:</strong> Learning basic beginning-middle-end story structure.</li>
-        <li><strong>Ages 11-14:</strong> Mastering transitions between ideas and basic outlining techniques.</li>
-        <li><strong>Ages 15-18:</strong> Adapting structure to different contexts and audiences with sophisticated organizational patterns.</li>
+      <h2 class="text-xl font-bold mb-3 mt-6">7 Ways to Encourage Creative Thinking</h2>
+      <ol class="list-decimal pl-6 mb-4 space-y-3">
+        <li><strong>Ask open-ended questions:</strong> Questions that can't be answered with "yes" or "no"</li>
+        <li><strong>Embrace the mess:</strong> Allow for messy play and experimentation</li>
+        <li><strong>Practice idea quantity:</strong> Make "How many ways...?" questions part of daily conversation</li>
+        <li><strong>Reduce screen time:</strong> Balance technology with unplugged creative time</li>
+        <li><strong>Avoid judging ideas:</strong> There are no "bad" ideas during creative sessions</li>
+        <li><strong>Model creativity:</strong> Let your child see you trying new things</li>
+        <li><strong>Create a creativity space:</strong> Designate an area with art supplies and materials</li>
+      </ol>
+      
+      <div class="bg-blue-50 p-4 rounded-lg mt-6">
+        <h3 class="font-semibold mb-2">Creativity Tip:</h3>
+        <p>Focus on the process, not the product. Ask questions like "What did you enjoy about making this?" rather than judging the final result.</p>
+      </div>
+    `
+  },
+  {
+    id: 8,
+    title: "5 Key Financial Concepts Every Teen Should Know",
+    description: "Essential money management skills to prepare teenagers for adulthood",
+    type: "Checklist",
+    readTime: "5 min",
+    ageGroup: "Ages 13-18",
+    category: "Financial Intelligence",
+    link: "#teen-finance",
+    content: `
+      <div class="mb-6">
+        <p>The teenage years are the perfect time to learn important money skills. These five concepts will give your teen a strong financial foundation for adulthood.</p>
+      </div>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">1. Budgeting Basics</h2>
+      <p>A budget is simply a plan for your money. Help teens understand:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Income vs. Expenses:</strong> Money coming in vs. money going out</li>
+        <li><strong>Needs vs. Wants:</strong> Necessary expenses vs. optional purchases</li>
+        <li><strong>The 50/30/20 Rule:</strong> 50% for needs, 30% for wants, 20% for saving</li>
       </ul>
       
-      <p><strong>Development strategy:</strong> Practice reordering scrambled paragraphs into logical sequences. For older children, analyze the structural patterns in effective speeches or presentations.</p>
+      <div class="bg-gray-100 p-4 rounded-lg mb-6">
+        <h3 class="font-semibold mb-2">Activity: Teen Budget Template</h3>
+        <p>Help your teen create a simple monthly budget:</p>
+        <div class="mt-3 space-y-2">
+          <div class="flex justify-between">
+            <span class="font-medium">Income sources:</span>
+            <span>Amount</span>
+          </div>
+          <div class="flex justify-between border-b pb-1">
+            <span>Allowance</span>
+            <span>₹_______</span>
+          </div>
+          <div class="flex justify-between border-b pb-1">
+            <span>Part-time work</span>
+            <span>₹_______</span>
+          </div>
+          <div class="flex justify-between border-b pb-1">
+            <span>Gifts</span>
+            <span>₹_______</span>
+          </div>
+          <div class="flex justify-between font-medium pt-1">
+            <span>Total Income:</span>
+            <span>₹_______</span>
+          </div>
+          
+          <div class="mt-4">
+            <div class="flex justify-between">
+              <span class="font-medium">Expenses:</span>
+              <span>Amount</span>
+            </div>
+            <div class="flex justify-between border-b pb-1">
+              <span>Savings</span>
+              <span>₹_______</span>
+            </div>
+            <div class="flex justify-between border-b pb-1">
+              <span>Phone</span>
+              <span>₹_______</span>
+            </div>
+            <div class="flex justify-between border-b pb-1">
+              <span>Entertainment</span>
+              <span>₹_______</span>
+            </div>
+            <div class="flex justify-between border-b pb-1">
+              <span>Food</span>
+              <span>₹_______</span>
+            </div>
+            <div class="flex justify-between border-b pb-1">
+              <span>Other</span>
+              <span>₹_______</span>
+            </div>
+            <div class="flex justify-between font-medium pt-1">
+              <span>Total Expenses:</span>
+              <span>₹_______</span>
+            </div>
+          </div>
+        </div>
+      </div>
       
-      <h4>3. Audience Adaptation</h4>
-      
-      <p><strong>What it involves:</strong> Tailoring content, complexity, examples, and delivery to specific listeners' knowledge, interests, and needs.</p>
-      
-      <p><strong>Why it matters:</strong> The same information presented differently can transform from confusing to compelling based on audience adaptation.</p>
-      
-      <p><strong>Developmental path:</strong></p>
-      <ul>
-        <li><strong>Ages 8-10:</strong> Recognizing that different people have different information and perspectives.</li>
-        <li><strong>Ages 11-14:</strong> Adjusting explanation styles for different audiences (younger children, peers, adults).</li>
-        <li><strong>Ages 15-18:</strong> Sophisticated analysis of audience characteristics to craft targeted messaging.</li>
+      <h2 class="text-xl font-bold mb-3 mt-6">2. Saving and Goal Setting</h2>
+      <p>Help your teen develop a saving habit:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Emergency Fund:</strong> Start with saving ₹1000 for unexpected expenses</li>
+        <li><strong>Short-term Goals:</strong> Saving for items wanted in the next few months</li>
+        <li><strong>Long-term Goals:</strong> Bigger goals like education or a vehicle</li>
+        <li><strong>Pay Yourself First:</strong> Save a portion before spending anything</li>
       </ul>
       
-      <p><strong>Development strategy:</strong> Challenge your child to explain the same concept to three different audiences—perhaps a younger sibling, a peer, and a grandparent. Discuss how they changed their approach for each.</p>
-      
-      <h4>4. Non-Verbal Fluency</h4>
-      
-      <p><strong>What it involves:</strong> Effective use of facial expressions, gestures, posture, voice modulation, and eye contact.</p>
-      
-      <p><strong>Why it matters:</strong> Research indicates that non-verbal elements account for 65-93% of the impact of interpersonal communication.</p>
-      
-      <p><strong>Developmental path:</strong></p>
-      <ul>
-        <li><strong>Ages 8-10:</strong> Developing awareness of basic non-verbal cues and their meanings.</li>
-        <li><strong>Ages 11-14:</strong> Practicing intentional non-verbal expression and reading others' signals.</li>
-        <li><strong>Ages 15-18:</strong> Mastering vocal variety, strategic pausing, and gesture coordination.</li>
+      <h2 class="text-xl font-bold mb-3 mt-6">3. Banking Fundamentals</h2>
+      <p>Basic banking knowledge every teen needs:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Account Types:</strong> Checking vs. savings accounts</li>
+        <li><strong>Interest:</strong> How money grows in a savings account</li>
+        <li><strong>ATM Usage:</strong> How to use ATMs safely</li>
+        <li><strong>Online Banking:</strong> Checking balances and tracking spending</li>
+        <li><strong>Bank Fees:</strong> Understanding common fees and how to avoid them</li>
       </ul>
       
-      <p><strong>Development strategy:</strong> Play "emotions charades" with younger children. For teens, record 30-second video introductions and analyze body language together.</p>
-      
-      <h4>5. Active Listening</h4>
-      
-      <p><strong>What it involves:</strong> Full attention, effective questioning, thoughtful paraphrasing, and appropriate response.</p>
-      
-      <p><strong>Why it matters:</strong> Active listeners gather better information, build stronger relationships, and make fewer critical errors.</p>
-      
-      <p><strong>Developmental path:</strong></p>
-      <ul>
-        <li><strong>Ages 8-10:</strong> Learning to maintain eye contact and ask clarifying questions.</li>
-        <li><strong>Ages 11-14:</strong> Developing paraphrasing skills and managing internal distractions.</li>
-        <li><strong>Ages 15-18:</strong> Mastering empathic listening and sophisticated questioning techniques.</li>
+      <h2 class="text-xl font-bold mb-3 mt-6">4. Responsible Credit</h2>
+      <p>Before your teen uses credit, teach them:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Credit vs. Debit:</strong> Understanding the difference</li>
+        <li><strong>Interest Costs:</strong> How borrowed money gets expensive</li>
+        <li><strong>Credit Scores:</strong> What they are and why they matter</li>
+        <li><strong>Credit Building:</strong> How to build good credit safely</li>
+        <li><strong>Debt Warning Signs:</strong> Recognizing problem debt</li>
       </ul>
       
-      <p><strong>Development strategy:</strong> Institute a "no interrupting" rule during family discussions, with clear turn-taking signals. For older children, practice the "three questions" technique—asking three thoughtful follow-up questions before sharing their own ideas.</p>
-      
-      <h4>6. Feedback Integration</h4>
-      
-      <p><strong>What it involves:</strong> Receiving, processing, and applying feedback to improve communication effectiveness.</p>
-      
-      <p><strong>Why it matters:</strong> The ability to adapt based on feedback distinguishes growth-oriented communicators from those who plateau early.</p>
-      
-      <p><strong>Developmental path:</strong></p>
-      <ul>
-        <li><strong>Ages 8-10:</strong> Learning to hear constructive feedback without defensive reactions.</li>
-        <li><strong>Ages 11-14:</strong> Differentiating between helpful and unhelpful feedback types.</li>
-        <li><strong>Ages 15-18:</strong> Proactively seeking specific feedback and implementing systematic improvements.</li>
+      <h2 class="text-xl font-bold mb-3 mt-6">5. Income and Taxes</h2>
+      <p>Prepare teens for working life with these concepts:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Gross vs. Net Pay:</strong> The difference between what you earn and take home</li>
+        <li><strong>Income Tax Basics:</strong> Why we pay taxes and how they work</li>
+        <li><strong>Tax Forms:</strong> Understanding basic tax documents</li>
+        <li><strong>Education and Income:</strong> How skills and education affect earning potential</li>
+        <li><strong>Side Hustles:</strong> Exploring ways to earn extra income</li>
       </ul>
       
-      <p><strong>Development strategy:</strong> After any presentation or important conversation, ask: "What went well? What could be even better next time?" For teens, help them create personal feedback tracking systems.</p>
+      <div class="bg-blue-50 p-4 rounded-lg mt-6">
+        <h3 class="font-semibold mb-2">Money Learning Tip:</h3>
+        <p>Use real money situations as teaching moments. When your teen wants to make a big purchase, it's a perfect opportunity to discuss budgeting, saving, and smart shopping.</p>
+      </div>
+    `
+  },
+  {
+    id: 9,
+    title: "Digital Literacy Skills for Elementary Students",
+    description: "Age-appropriate technology skills for young children to build a strong foundation",
+    type: "Guide",
+    readTime: "5 min",
+    ageGroup: "Ages 3-7",
+    category: "Digital Literacy",
+    link: "#elementary-digital-skills",
+    content: `
+      <div class="mb-6">
+        <p>Young children are growing up in a digital world. Teaching them the right skills early helps them use technology safely and productively.</p>
+      </div>
       
-      <h4>7. Multimodal Flexibility</h4>
+      <h2 class="text-xl font-bold mb-3 mt-6">Digital Skills for Ages 3-7</h2>
+      <p>Focus on these foundational skills:</p>
       
-      <p><strong>What it involves:</strong> Adapting effectively across communication channels (written, verbal, visual, digital).</p>
-      
-      <p><strong>Why it matters:</strong> Different contexts require different communication approaches, and flexibility prevents costly mismatches.</p>
-      
-      <p><strong>Developmental path:</strong></p>
-      <ul>
-        <li><strong>Ages 8-10:</strong> Recognizing basic differences between communication forms.</li>
-        <li><strong>Ages 11-14:</strong> Understanding channel-specific etiquette and expectations.</li>
-        <li><strong>Ages 15-18:</strong> Strategically selecting optimal channels for different communication goals.</li>
+      <h3 class="text-lg font-semibold mb-2 mt-5">1. Basic Device Navigation</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Turning devices on and off</strong> properly</li>
+        <li><strong>Opening and closing apps</strong> safely</li>
+        <li><strong>Touch screen skills</strong> (tap, swipe, pinch)</li>
+        <li><strong>Mouse and keyboard basics</strong> for computer use</li>
+        <li><strong>Volume control</strong> and adjusting settings</li>
       </ul>
       
-      <p><strong>Development strategy:</strong> Practice translating the same message across multiple formats (email, phone call, presentation, social media post). Discuss how each channel changes the approach.</p>
-      
-      <h3>Practical Implementation Approaches</h3>
-      
-      <h4>Structured Communication Practice</h4>
-      
-      <p>Create regular, low-pressure opportunities for deliberate practice:</p>
-      
-      <ul>
-        <li><strong>Family presentation night:</strong> Weekly 3-minute presentations on topics of personal interest.</li>
-        <li><strong>Structured discussion:</strong> Assign rotating roles (facilitator, devil's advocate, summarizer) during family discussions.</li>
-        <li><strong>Video analysis:</strong> Record occasional presentations for constructive self-assessment.</li>
-        <li><strong>Real-world opportunities:</strong> Encourage ordering their own food at restaurants, making phone calls, or handling appropriate interactions with adults.</li>
+      <h3 class="text-lg font-semibold mb-2 mt-5">2. Digital Safety</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Personal information:</strong> What should stay private</li>
+        <li><strong>Permission rule:</strong> Ask before using devices or downloading</li>
+        <li><strong>Stranger awareness:</strong> Not talking to unknown people online</li>
+        <li><strong>Screen time limits:</strong> Understanding healthy boundaries</li>
+        <li><strong>Asking for help:</strong> What to do if something feels wrong</li>
       </ul>
       
-      <h4>Progressive Responsibility</h4>
-      
-      <p>Gradually increase communication challenges as skills develop:</p>
-      
-      <ul>
-        <li><strong>Ages 8-10:</strong> Explaining simple processes or retelling stories.</li>
-        <li><strong>Ages 11-14:</strong> Presenting researched topics or leading small group activities.</li>
-        <li><strong>Ages 15-18:</strong> Handling complex communications like negotiation, problem-solving discussions, or formal presentations.</li>
+      <h3 class="text-lg font-semibold mb-2 mt-5">3. Digital Citizenship</h3>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Kind words online:</strong> Basic digital etiquette</li>
+        <li><strong>Sharing devices:</strong> Taking turns and respecting others' work</li>
+        <li><strong>Digital manners:</strong> Not interrupting others with technology</li>
+        <li><strong>Content creation:</strong> Making simple digital projects</li>
+        <li><strong>Screen-free zones:</strong> Places where devices aren't used</li>
       </ul>
       
-      <h4>Feedback Focus Rotation</h4>
+      <h2 class="text-xl font-bold mb-3 mt-6">Fun Learning Activities</h2>
+      <ol class="list-decimal pl-6 mb-4 space-y-3">
+        <li><strong>Photo Safari:</strong> Take pictures of specific colors or shapes</li>
+        <li><strong>Digital Storytelling:</strong> Create simple stories with photos and audio recording</li>
+        <li><strong>Emoji Communication:</strong> Practice expressing feelings with emojis</li>
+        <li><strong>Drawing Apps:</strong> Create digital art together</li>
+        <li><strong>Virtual Museum Tours:</strong> Explore age-appropriate virtual exhibits</li>
+      </ol>
       
-      <p>Rather than overwhelming with comprehensive feedback, focus on one aspect at a time:</p>
+      <h2 class="text-xl font-bold mb-3 mt-6">Recommended Apps & Resources</h2>
       
-      <ul>
-        <li>Week 1: Focus feedback only on structure and organization</li>
-        <li>Week 2: Focus feedback only on voice and delivery</li>
-        <li>Week 3: Focus feedback only on audience engagement</li>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h3 class="font-semibold mb-2">Educational Apps:</h3>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>Khan Academy Kids</li>
+            <li>PBS Kids Games</li>
+            <li>Starfall</li>
+            <li>Endless Alphabet</li>
+            <li>Kodable (coding basics)</li>
+          </ul>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h3 class="font-semibold mb-2">Online Resources:</h3>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>Common Sense Media</li>
+            <li>PBS Kids</li>
+            <li>National Geographic Kids</li>
+            <li>Storyline Online</li>
+            <li>Code.org (Hour of Code)</li>
+          </ul>
+        </div>
+      </div>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">Digital Literacy Milestones (Ages 3-7)</h2>
+      
+      <div class="bg-gray-50 p-4 rounded-lg mb-4">
+        <h3 class="font-semibold mb-2">Ages 3-4:</h3>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>Basic touchscreen navigation</li>
+          <li>Understanding screen time limits</li>
+          <li>Using simple apps with guidance</li>
+          <li>Following digital safety rules with reminders</li>
+        </ul>
+      </div>
+      
+      <div class="bg-gray-50 p-4 rounded-lg mb-4">
+        <h3 class="font-semibold mb-2">Ages 5-7:</h3>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>Independent use of educational apps</li>
+          <li>Basic internet navigation with supervision</li>
+          <li>Understanding privacy concepts</li>
+          <li>Creating simple digital content</li>
+          <li>Distinguishing between real and make-believe online</li>
+        </ul>
+      </div>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">Setting Up for Success</h2>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Use parental controls</strong> on all devices and apps</li>
+        <li><strong>Create a "digital playpen"</strong> with only approved apps accessible</li>
+        <li><strong>Establish clear screen time rules</strong> and stick to them</li>
+        <li><strong>Always supervise</strong> online activities at this age</li>
+        <li><strong>Be a good role model</strong> with your own device use</li>
       </ul>
       
-      <p>This rotation allows for deeper skill development in each area without overwhelm.</p>
+      <div class="bg-blue-50 p-4 rounded-lg mt-6">
+        <h3 class="font-semibold mb-2">Parent Tip:</h3>
+        <p>Balance is key. For every hour of screen time, plan several hours of physical play, creative activities, and social interaction. Digital skills are important, but they're just one part of a child's development.</p>
+      </div>
+    `
+  },
+  {
+    id: 10,
+    title: "Teaching Kids About Saving and Investing",
+    description: "Simple ways to introduce important money concepts that build wealth over time",
+    type: "Guide",
+    readTime: "6 min",
+    ageGroup: "Ages 8-12",
+    category: "Financial Intelligence",
+    link: "#saving-investing",
+    content: `
+      <div class="mb-6">
+        <p>Teaching children about saving and investing early sets them up for financial success later in life. These lessons are best taught through hands-on experiences.</p>
+      </div>
       
-      <h3>Communication in the AI Era</h3>
-      
-      <p>As AI systems become increasingly capable of generating content, human communication advantage will shift toward:</p>
-      
-      <ul>
-        <li><strong>Emotional intelligence:</strong> Communicating with empathy and interpersonal sensitivity</li>
-        <li><strong>Cross-cultural fluency:</strong> Adapting communication across diverse human contexts</li>
-        <li><strong>Ethical persuasion:</strong> Influencing with integrity rather than manipulation</li>
-        <li><strong>Complex collaboration:</strong> Facilitating group processes and mediating different perspectives</li>
+      <h2 class="text-xl font-bold mb-3 mt-6">Savings Basics for Kids</h2>
+      <p>Start with these fundamental concepts:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Regular Saving:</strong> Setting aside a portion of money received</li>
+        <li><strong>Saving Goals:</strong> Identifying short and long-term wants</li>
+        <li><strong>Delayed Gratification:</strong> Waiting to buy something better</li>
+        <li><strong>Interest:</strong> How money can grow when saved in a bank</li>
+        <li><strong>Compound Growth:</strong> How saved money grows faster over time</li>
       </ul>
       
-      <p>These "deeply human" communication capabilities will likely remain distinctive advantages even as AI continues to advance.</p>
+      <h2 class="text-xl font-bold mb-3 mt-6">The Three Jar System</h2>
+      <p>A simple way to teach money management with three clear jars:</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <div class="bg-blue-50 p-4 rounded-lg">
+          <h3 class="font-semibold mb-2 text-center">Spend Jar (50%)</h3>
+          <p class="text-sm">For small purchases they can make now</p>
+        </div>
+        
+        <div class="bg-green-50 p-4 rounded-lg">
+          <h3 class="font-semibold mb-2 text-center">Save Jar (40%)</h3>
+          <p class="text-sm">For bigger items they're saving toward</p>
+        </div>
+        
+        <div class="bg-purple-50 p-4 rounded-lg">
+          <h3 class="font-semibold mb-2 text-center">Share Jar (10%)</h3>
+          <p class="text-sm">For giving to others or causes they care about</p>
+        </div>
+      </div>
       
-      <h3>The Parent's Role: Modeling and Coaching</h3>
+      <h2 class="text-xl font-bold mb-3 mt-6">Fun Saving Activities for Ages 8-12</h2>
+      <ol class="list-decimal pl-6 mb-4 space-y-3">
+        <li><strong>Savings Challenge:</strong> Save a specific amount each week for a goal</li>
+        <li><strong>Savings Thermometer:</strong> Make a visual chart to track progress toward a goal</li>
+        <li><strong>Match Their Savings:</strong> Offer to add a percentage to what they save</li>
+        <li><strong>Money Journal:</strong> Track money earned, saved, and spent in a special notebook</li>
+        <li><strong>Banking Field Trip:</strong> Visit a bank to open a child's savings account</li>
+      </ol>
       
-      <p>Children develop communication patterns primarily through observation and guided practice. The most effective approaches combine:</p>
-      
-      <ul>
-        <li><strong>Explicit modeling:</strong> "I'm going to ask for clarification here because I'm not sure I understand..."</li>
-        <li><strong>Process narration:</strong> "I noticed I was speaking too quickly, so I deliberately slowed down."</li>
-        <li><strong>Structured practice:</strong> Regular opportunities for skill development with clear parameters</li>
-        <li><strong>Specific feedback:</strong> "Your introduction really captured my attention because..."</li>
-        <li><strong>Growth-oriented perspective:</strong> Framing communication ability as a learnable skill, not an innate talent</li>
+      <h2 class="text-xl font-bold mb-3 mt-6">Introducing Investment Concepts</h2>
+      <p>Start with these simple ideas to explain investing:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Ownership:</strong> When you invest, you own a small piece of a company</li>
+        <li><strong>Growth:</strong> Investments can grow over time as companies earn money</li>
+        <li><strong>Risk and Reward:</strong> Investments can go up and down in value</li>
+        <li><strong>Long-term Thinking:</strong> Investing works best over many years</li>
+        <li><strong>Diversification:</strong> Spreading money across different investments</li>
       </ul>
       
-      <p>By developing these sophisticated communication capabilities early, you provide your child with professional advantages that will remain valuable regardless of how technology transforms the workplace in coming decades.</p>
+      <h2 class="text-xl font-bold mb-3 mt-6">Investment Teaching Activities</h2>
+      <ol class="list-decimal pl-6 mb-4 space-y-3">
+        <li><strong>Stock Market Game:</strong> Track pretend investments in companies they know (like Disney or Apple)</li>
+        <li><strong>Company Research:</strong> Study businesses they're interested in</li>
+        <li><strong>Investment Club:</strong> Start a family investment club with small amounts</li>
+        <li><strong>Compound Interest Demonstration:</strong> Show how money grows with a calculator</li>
+        <li><strong>Real Investment:</strong> Consider a small custodial investment account for older children</li>
+      </ol>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">Conversations About Money and Wealth</h2>
+      <p>Important topics to discuss with children:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Working For Money:</strong> Connection between work and earning</li>
+        <li><strong>Money Doesn't Equal Worth:</strong> A person's value isn't based on wealth</li>
+        <li><strong>Giving Back:</strong> Importance of sharing with others</li>
+        <li><strong>Contentment:</strong> Being happy with what you have</li>
+        <li><strong>Financial Independence:</strong> Goal of having enough for your needs</li>
+      </ul>
+      
+      <div class="bg-gray-50 p-4 rounded-lg mb-6 mt-6">
+        <h3 class="font-semibold mb-2">The Power of Compound Interest: A Simple Example</h3>
+        <p class="mb-2">Show your child this example of ₹1,000 saved at age 10:</p>
+        <div class="grid grid-cols-2 gap-2 mt-3">
+          <div class="bg-white p-2 rounded">
+            <p class="font-medium">At age 20 (10 years):</p>
+            <p>₹1,610</p>
+          </div>
+          <div class="bg-white p-2 rounded">
+            <p class="font-medium">At age 30 (20 years):</p>
+            <p>₹2,594</p>
+          </div>
+          <div class="bg-white p-2 rounded">
+            <p class="font-medium">At age 40 (30 years):</p>
+            <p>₹4,178</p>
+          </div>
+          <div class="bg-white p-2 rounded">
+            <p class="font-medium">At age 60 (50 years):</p>
+            <p>₹10,834</p>
+          </div>
+        </div>
+        <p class="text-sm mt-2">*Assuming 5% interest compounded annually</p>
+      </div>
+      
+      <div class="bg-blue-50 p-4 rounded-lg mt-6">
+        <h3 class="font-semibold mb-2">Teaching Tip:</h3>
+        <p>Make money conversations normal and regular in your home. Children learn financial habits by watching what you do and through open discussions about money decisions.</p>
+      </div>
+    `
+  },
+  {
+    id: 11,
+    title: "Essential Critical Thinking Skills for Students",
+    description: "Help your child develop the ability to analyze information and make sound judgments",
+    type: "Framework",
+    readTime: "5 min",
+    ageGroup: "Ages 8-12",
+    category: "All Skills",
+    link: "#critical-thinking",
+    content: `
+      <div class="mb-6">
+        <p>Critical thinking helps children evaluate information, solve problems, and make good decisions. These skills are increasingly important in today's information-filled world.</p>
+      </div>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">What is Critical Thinking?</h2>
+      <p>Critical thinking includes these abilities:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>Analyzing information carefully</li>
+        <li>Asking thoughtful questions</li>
+        <li>Recognizing different perspectives</li>
+        <li>Separating facts from opinions</li>
+        <li>Making reasoned judgments</li>
+        <li>Solving problems systematically</li>
+      </ul>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">The Critical Thinking Framework</h2>
+      <p>Teach children these five steps for better thinking:</p>
+      
+      <div class="bg-gray-50 p-4 rounded-lg my-4">
+        <h3 class="font-semibold mb-2">1. Ask Questions</h3>
+        <p class="mb-2">Encourage children to ask:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>What do I already know about this?</li>
+          <li>What more do I need to find out?</li>
+          <li>Who created this information and why?</li>
+          <li>What evidence supports this claim?</li>
+          <li>Could there be another explanation?</li>
+        </ul>
+      </div>
+      
+      <div class="bg-gray-50 p-4 rounded-lg my-4">
+        <h3 class="font-semibold mb-2">2. Gather Information</h3>
+        <p class="mb-2">Help children learn to:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>Find reliable sources</li>
+          <li>Look for different perspectives</li>
+          <li>Check multiple sources</li>
+          <li>Distinguish between facts and opinions</li>
+          <li>Take good notes</li>
+        </ul>
+      </div>
+      
+      <div class="bg-gray-50 p-4 rounded-lg my-4">
+        <h3 class="font-semibold mb-2">3. Examine Evidence</h3>
+        <p class="mb-2">Teach children to evaluate information by:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>Looking for bias</li>
+          <li>Checking if sources are credible</li>
+          <li>Identifying logical fallacies</li>
+          <li>Separating relevant from irrelevant details</li>
+          <li>Considering different explanations</li>
+        </ul>
+      </div>
+      
+      <div class="bg-gray-50 p-4 rounded-lg my-4">
+        <h3 class="font-semibold mb-2">4. Consider Alternatives</h3>
+        <p class="mb-2">Guide children to:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>Think of multiple solutions</li>
+          <li>See issues from different perspectives</li>
+          <li>Predict possible outcomes</li>
+          <li>Identify pros and cons of each option</li>
+          <li>Be open to changing their mind</li>
+        </ul>
+      </div>
+      
+      <div class="bg-gray-50 p-4 rounded-lg my-4">
+        <h3 class="font-semibold mb-2">5. Draw Conclusions</h3>
+        <p class="mb-2">Help children learn to:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>Make decisions based on evidence</li>
+          <li>Explain their reasoning</li>
+          <li>Reflect on their thinking process</li>
+          <li>Consider the impact of their conclusions</li>
+          <li>Be willing to revise with new information</li>
+        </ul>
+      </div>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">Critical Thinking Activities By Age</h2>
+      
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 8-12:</h3>
+      <ol class="list-decimal pl-6 mb-4 space-y-2">
+        <li><strong>Spot the Difference:</strong> Compare news articles on the same topic</li>
+        <li><strong>Advertisement Analysis:</strong> Identify persuasion techniques in ads</li>
+        <li><strong>Mystery Games:</strong> Solve age-appropriate mysteries and puzzles</li>
+        <li><strong>Fact or Opinion Sorting:</strong> Categorize statements as facts or opinions</li>
+        <li><strong>What Would Happen If...?:</strong> Explore hypothetical scenarios</li>
+      </ol>
+      
+      <h3 class="text-lg font-semibold mb-2 mt-5">Ages 13-18:</h3>
+      <ol class="list-decimal pl-6 mb-4 space-y-2">
+        <li><strong>Debate Club:</strong> Argue different sides of current issues</li>
+        <li><strong>Media Literacy Projects:</strong> Analyze news and social media content</li>
+        <li><strong>Problem-Solution Essays:</strong> Identify problems and propose solutions</li>
+        <li><strong>Decision Analysis:</strong> Evaluate important decisions using criteria</li>
+        <li><strong>Socratic Discussions:</strong> Use guided questioning to explore complex topics</li>
+      </ol>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">Questions That Develop Critical Thinking</h2>
+      <p>Use these questions in everyday conversations:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li>"What makes you think that?"</li>
+        <li>"How do you know this is true?"</li>
+        <li>"Could there be another explanation?"</li>
+        <li>"What would happen if...?"</li>
+        <li>"How could we solve this problem?"</li>
+        <li>"Why might someone disagree with this?"</li>
+        <li>"What evidence would change your mind?"</li>
+      </ul>
+      
+      <div class="bg-blue-50 p-4 rounded-lg mt-6">
+        <h3 class="font-semibold mb-2">Critical Thinking Tip:</h3>
+        <p>Model good thinking yourself. Talk through your own decision-making process out loud. For example: "I'm trying to decide if we should buy this. Let me think about the pros and cons..."</p>
+      </div>
+    `
+  },
+  {
+    id: 12,
+    title: "Coding Basics for Kids: Getting Started",
+    description: "Introduce your child to programming concepts through fun, age-appropriate activities",
+    type: "Guide",
+    readTime: "6 min",
+    ageGroup: "Ages 8-12",
+    category: "Digital Literacy",
+    link: "#coding-basics",
+    content: `
+      <div class="mb-6">
+        <p>Coding helps children develop logical thinking, problem-solving skills, and creativity. You don't need to be a programmer yourself to help your child get started.</p>
+      </div>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">Why Learn Coding?</h2>
+      <p>Coding teaches children important skills:</p>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Logical thinking:</strong> Breaking down problems into steps</li>
+        <li><strong>Problem-solving:</strong> Finding and fixing errors</li>
+        <li><strong>Persistence:</strong> Working through challenges</li>
+        <li><strong>Creativity:</strong> Building and designing new things</li>
+        <li><strong>Digital literacy:</strong> Understanding how technology works</li>
+      </ul>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">Getting Started: No Computer Needed</h2>
+      <p>Begin with "unplugged" activities that teach coding concepts without screens:</p>
+      <ol class="list-decimal pl-6 mb-4 space-y-3">
+        <li><strong>Robot Game:</strong> Give step-by-step commands for a person to follow (forward, turn right, etc.)</li>
+        <li><strong>Sequence Cards:</strong> Create cards with daily actions and put them in order</li>
+        <li><strong>If-Then Tasks:</strong> "If it's raining, then put on a raincoat"</li>
+        <li><strong>Pattern Games:</strong> Continue or create patterns with colors or shapes</li>
+        <li><strong>Recipe Following:</strong> Cooking together uses the same sequential thinking</li>
+      </ol>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">Beginner-Friendly Coding Resources</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h3 class="font-semibold mb-2">Ages 5-8:</h3>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>ScratchJr (free app)</li>
+            <li>Kodable (website and app)</li>
+            <li>Code.org Course A-C</li>
+            <li>Lightbot (app)</li>
+            <li>Cubetto (physical coding toy)</li>
+          </ul>
+        </div>
+        
+        <div class="bg-gray-50 p-4 rounded-lg">
+          <h3 class="font-semibold mb-2">Ages 8-12:</h3>
+          <ul class="list-disc pl-6 space-y-1">
+            <li>Scratch (free website)</li>
+            <li>Code.org Course D-F</li>
+            <li>Tynker (website and app)</li>
+            <li>Khan Academy Intro to JS</li>
+            <li>Minecraft: Hour of Code</li>
+          </ul>
+        </div>
+      </div>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">Key Coding Concepts for Kids</h2>
+      
+      <div class="bg-gray-50 p-4 rounded-lg my-4">
+        <h3 class="font-semibold mb-2">1. Sequences</h3>
+        <p>The order of steps matters. Just like following a recipe, computers follow instructions in order.</p>
+        <div class="bg-white p-2 rounded mt-2">
+          <p class="font-medium">Example:</p>
+          <p>1. Move forward</p>
+          <p>2. Turn right</p>
+          <p>3. Move forward</p>
+        </div>
+      </div>
+      
+      <div class="bg-gray-50 p-4 rounded-lg my-4">
+        <h3 class="font-semibold mb-2">2. Loops</h3>
+        <p>Instead of writing the same instructions many times, use loops to repeat actions.</p>
+        <div class="bg-white p-2 rounded mt-2">
+          <p class="font-medium">Example:</p>
+          <p>Repeat 4 times:</p>
+          <p>&nbsp;&nbsp;1. Move forward</p>
+          <p>&nbsp;&nbsp;2. Turn right</p>
+        </div>
+      </div>
+      
+      <div class="bg-gray-50 p-4 rounded-lg my-4">
+        <h3 class="font-semibold mb-2">3. Conditionals</h3>
+        <p>These are "if-then" statements that make decisions based on conditions.</p>
+        <div class="bg-white p-2 rounded mt-2">
+          <p class="font-medium">Example:</p>
+          <p>If path is blocked:</p>
+          <p>&nbsp;&nbsp;Turn right</p>
+          <p>Otherwise:</p>
+          <p>&nbsp;&nbsp;Move forward</p>
+        </div>
+      </div>
+      
+      <div class="bg-gray-50 p-4 rounded-lg my-4">
+        <h3 class="font-semibold mb-2">4. Variables</h3>
+        <p>These are containers that store information like numbers or words.</p>
+        <div class="bg-white p-2 rounded mt-2">
+          <p class="font-medium">Example:</p>
+          <p>Set score = 0</p>
+          <p>When player collects coin:</p>
+          <p>&nbsp;&nbsp;Add 1 to score</p>
+        </div>
+      </div>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">Supporting Your Child's Coding Journey</h2>
+      <ul class="list-disc pl-6 mb-4 space-y-2">
+        <li><strong>Start simple</strong> with age-appropriate tools</li>
+        <li><strong>Learn alongside</strong> them - you don't need to be an expert</li>
+        <li><strong>Encourage experimentation</strong> - mistakes are part of learning</li>
+        <li><strong>Celebrate creative solutions</strong>, not just "correct" answers</li>
+        <li><strong>Connect with other coding families</strong> through clubs or online communities</li>
+        <li><strong>Limit screen time</strong> even for educational activities</li>
+      </ul>
+      
+      <h2 class="text-xl font-bold mb-3 mt-6">From Games to Real Coding</h2>
+      <p>As children grow, they can progress from visual coding to text-based languages:</p>
+      <ol class="list-decimal pl-6 mb-4 space-y-2">
+        <li><strong>Block-based coding:</strong> Scratch, Blockly (ages 7-12)</li>
+        <li><strong>Introductory text languages:</strong> Python, JavaScript (ages 11+)</li>
+        <li><strong>App development:</strong> MIT App Inventor, Thunkable (ages 12+)</li>
+        <li><strong>Web development:</strong> HTML/CSS basics (ages 11+)</li>
+        <li><strong>Advanced projects:</strong> Robotics, game development (ages 13+)</li>
+      </ol>
+      
+      <div class="bg-blue-50 p-4 rounded-lg mt-6">
+        <h3 class="font-semibold mb-2">Coding Tip:</h3>
+        <p>Focus on fun and creativity rather than perfection. The goal is to develop computational thinking and problem-solving skills, not to create professional programmers overnight.</p>
+      </div>
     `
   }
 ];
-
