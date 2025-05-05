@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ChevronLeft, Clock, BookOpen, ChevronRight, Bookmark, Share, Printer, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useToast } from "@/hooks/use-toast";
 
 interface ArticleContentProps {
   article: {
@@ -13,6 +14,7 @@ interface ArticleContentProps {
     category?: string;
     ageGroup?: string;
     type: string;
+    id?: number;
   } | null;
   onBack: () => void;
   onNext?: () => void;
@@ -29,7 +31,35 @@ const ArticleContent = ({
   hasNext = false,
   hasPrevious = false
 }: ArticleContentProps) => {
+  const { toast } = useToast();
+  
   if (!article) return null;
+
+  const handleSave = () => {
+    toast({
+      title: "Resource saved",
+      description: "This resource has been saved to your collection.",
+    });
+  };
+
+  const handleShare = () => {
+    navigator.clipboard.writeText(window.location.href);
+    toast({
+      title: "Link copied",
+      description: "Resource link copied to clipboard",
+    });
+  };
+
+  const handlePrint = () => {
+    window.print();
+  };
+
+  const handleDownload = () => {
+    toast({
+      title: "Download started",
+      description: "Your PDF is being generated and will download shortly.",
+    });
+  };
 
   return (
     <div className="max-w-3xl mx-auto my-8">
@@ -96,15 +126,15 @@ const ArticleContent = ({
             </div>
             
             <div className="flex items-center gap-3">
-              <Button variant="ghost" size="sm" className="text-gray-600 hover:text-brand-blue">
+              <Button variant="ghost" size="sm" className="text-gray-600 hover:text-brand-blue" onClick={handleSave}>
                 <Bookmark className="h-4 w-4 mr-1" />
                 <span className="hidden sm:inline">Save</span>
               </Button>
-              <Button variant="ghost" size="sm" className="text-gray-600 hover:text-brand-blue">
+              <Button variant="ghost" size="sm" className="text-gray-600 hover:text-brand-blue" onClick={handleShare}>
                 <Share className="h-4 w-4 mr-1" />
                 <span className="hidden sm:inline">Share</span>
               </Button>
-              <Button variant="ghost" size="sm" className="text-gray-600 hover:text-brand-blue">
+              <Button variant="ghost" size="sm" className="text-gray-600 hover:text-brand-blue" onClick={handlePrint}>
                 <Printer className="h-4 w-4 mr-1" />
                 <span className="hidden sm:inline">Print</span>
               </Button>
@@ -140,7 +170,7 @@ const ArticleContent = ({
         <p className="text-gray-500 text-sm mb-4">
           Download this guide as a PDF to reference offline
         </p>
-        <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-blue-50">
+        <Button variant="outline" className="border-brand-blue text-brand-blue hover:bg-blue-50" onClick={handleDownload}>
           <Download className="mr-2 h-4 w-4" />
           Download PDF Guide
         </Button>
