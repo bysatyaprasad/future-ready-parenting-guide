@@ -16,6 +16,8 @@ import HighIncomeRoadmap from "./pages/HighIncomeRoadmap";
 import DigitalLiteracySkill from "./pages/DigitalLiteracySkill";
 import FinancialIntelligenceSkill from "./pages/FinancialIntelligenceSkill";
 import CommunicationSkillsGuide from "./pages/CommunicationSkillsGuide";
+import CriticalThinkingSkill from "./pages/CriticalThinkingSkill";
+import CreativeProblemSolvingSkill from "./pages/CreativeProblemSolvingSkill";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +38,8 @@ const App = () => (
             <Route path="/skills/digital-literacy" element={<DigitalLiteracySkill />} />
             <Route path="/skills/financial-intelligence" element={<FinancialIntelligenceSkill />} />
             <Route path="/skills/communication" element={<CommunicationSkillsGuide />} />
+            <Route path="/skills/critical-thinking" element={<CriticalThinkingSkill />} />
+            <Route path="/skills/creative-problem-solving" element={<CreativeProblemSolvingSkill />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
