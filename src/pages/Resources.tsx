@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect } from 'react';
-import { Container } from '../components/ui/container';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import ResourcesFilter from '../components/ResourcesFilter';
 import ResourceCard from '../components/ResourceCard';
@@ -80,7 +79,7 @@ const Resources = () => {
   const { next, previous } = getAdjacentArticles();
 
   return (
-    <Container>
+    <div className="container mx-auto px-4 py-8">
       <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
         <TabsList className="hidden">
           <TabsTrigger value="all">All Resources</TabsTrigger>
@@ -151,7 +150,7 @@ const Resources = () => {
           )}
         </TabsContent>
       </Tabs>
-    </Container>
+    </div>
   );
 };
 
