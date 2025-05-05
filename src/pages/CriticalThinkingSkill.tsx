@@ -18,7 +18,7 @@ import {
   FileText,
   MessageSquare,
   Search,
-  PuzzlePiece
+  Puzzle
 } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 
