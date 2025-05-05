@@ -18,6 +18,9 @@ import FinancialIntelligenceSkill from "./pages/FinancialIntelligenceSkill";
 import CommunicationSkillsGuide from "./pages/CommunicationSkillsGuide";
 import CriticalThinkingSkill from "./pages/CriticalThinkingSkill";
 import CreativeProblemSolvingSkill from "./pages/CreativeProblemSolvingSkill";
+import EntrepreneurshipSkill from "./pages/EntrepreneurshipSkill";
+import CodingSkill from "./pages/CodingSkill";
+import SocialIntelligenceSkill from "./pages/SocialIntelligenceSkill";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +43,9 @@ const App = () => (
             <Route path="/skills/communication" element={<CommunicationSkillsGuide />} />
             <Route path="/skills/critical-thinking" element={<CriticalThinkingSkill />} />
             <Route path="/skills/creative-problem-solving" element={<CreativeProblemSolvingSkill />} />
+            <Route path="/skills/entrepreneurship" element={<EntrepreneurshipSkill />} />
+            <Route path="/skills/coding" element={<CodingSkill />} />
+            <Route path="/skills/social-intelligence" element={<SocialIntelligenceSkill />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
