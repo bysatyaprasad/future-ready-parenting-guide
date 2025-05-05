@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import PageHeader from '../components/PageHeader';
 import ResourcesFilter from '../components/ResourcesFilter';
@@ -469,4 +470,411 @@ const getResourceContent = (id) => {
         
         <p><strong>Emotional Regulation:</strong> The ability to recognize, understand, and manage emotions effectively, particularly during stressful situations.</p>
         
-        <p><strong>Optimistic Thinking:</strong> A hopeful outlook that sees challenges as temporary and specific rather than permanent and pervasive,
+        <p><strong>Optimistic Thinking:</strong> A hopeful outlook that sees challenges as temporary and specific rather than permanent and pervasive.</p>
+        
+        <p><strong>Problem-Solving Skills:</strong> The capacity to define problems accurately, generate potential solutions, and implement effective approaches.</p>
+        
+        <p><strong>Social Connections:</strong> Strong, supportive relationships that provide emotional support, practical assistance, and a sense of belonging.</p>
+        
+        <p><strong>Sense of Purpose:</strong> The belief that one's life has meaning and that one can contribute to something larger than oneself.</p>
+        
+        <h3>Developing Resilience by Age</h3>
+        <p><strong>Ages 2-5:</strong> Young children develop early resilience through secure attachments and supportive environments. Provide consistent routines and clear boundaries to create a sense of security. Allow age-appropriate independence and problem-solving opportunities. Help children name emotions and develop simple regulation strategies like deep breathing. Use storytelling to introduce concepts of persistence and overcoming challenges. Praise effort and strategies rather than outcomes.</p>
+        
+        <p><strong>Ages 6-9:</strong> As children enter school and face new social and academic challenges, build on foundational skills. Normalize mistakes and setbacks as part of learning. Teach problem-solving steps explicitly: define the problem, brainstorm solutions, try one, evaluate results. Help children identify their personal strengths and how these can help in difficult situations. Introduce the concept of "growth mindset" - the belief that abilities can be developed through dedication and hard work.</p>
+        
+        <p><strong>Ages 10-13:</strong> Pre-adolescents benefit from increasing autonomy while maintaining support. Encourage healthy risk-taking through new activities and challenges. Teach more sophisticated emotion regulation strategies, like positive self-talk. Discuss how to evaluate situations to determine what aspects are within their control. Help them develop perspective-taking abilities to see challenges in broader context. Build experiences of contributing to family, school, or community to develop purpose.</p>
+        
+        <p><strong>Ages 14-18:</strong> Teens need support navigating increasingly complex challenges. Help them identify core values and how these can guide decisions during difficult times. Discuss how to build and maintain supportive relationships while setting healthy boundaries. Encourage reflection on past challenges and what coping strategies worked best. Support appropriate independence while remaining available for guidance. Share your own experiences with resilience authentically, including both struggles and successful adaptations.</p>
+        
+        <h3>Practical Strategies for Parents</h3>
+        <p><strong>Allow Natural Consequences:</strong> When safe and appropriate, resist the urge to rescue children from every disappointment or challenge. Learning to cope with small setbacks builds capacity for larger ones.</p>
+        
+        <p><strong>Model Resilience:</strong> Children learn by watching how you respond to difficulties. Demonstrate healthy coping, positive self-talk, and problem-solving in your own life.</p>
+        
+        <p><strong>Build Mastery Experiences:</strong> Provide opportunities for children to develop skills and experience success through effort. Each mastery experience builds self-efficacy.</p>
+        
+        <p><strong>Maintain Supportive Relationships:</strong> Ensure children know they can count on you while encouraging them to build broader support networks with extended family, friends, and mentors.</p>
+        
+        <p><strong>Teach Stress Management:</strong> Help children recognize physical signs of stress and develop personalized strategies for regulation (exercise, creative expression, mindfulness practices, time in nature).</p>
+        
+        <p><strong>Nurture Optimism:</strong> Help children challenge negative thinking patterns by looking for evidence, considering alternative perspectives, and focusing on aspects within their control.</p>
+        
+        <p><strong>Encourage Helping Others:</strong> Service to others builds purpose, perspective, and self-efficacy while strengthening social connections.</p>
+        
+        <h3>Addressing Significant Adversity</h3>
+        <p>While everyday challenges build resilience, some children face more serious adversity like family disruption, economic hardship, discrimination, or trauma. For children facing significant adversity:</p>
+        <ul>
+          <li>Prioritize stable, supportive adult relationships as the most crucial protective factor</li>
+          <li>Connect with appropriate professional resources when needed</li>
+          <li>Focus even more intentionally on building strengths and coping skills</li>
+          <li>Advocate for supportive environments in schools and communities</li>
+          <li>Recognize that resilience development may take different paths but remains possible</li>
+        </ul>
+        
+        <h3>Conclusion</h3>
+        <p>Resilience is not about eliminating struggle from children's lives but equipping them to navigate challenges successfully. The goal isn't to raise children who never experience distress, but who know how to cope with it effectively. By intentionally fostering resilience from early childhood through adolescence, parents provide children with an internal toolkit that will serve them throughout life's inevitable ups and downs. In an increasingly unpredictable world, adaptability and resilience may be the most valuable skills we can help our children develop.</p>
+      `;
+    case 8:
+      return `
+        <h2>Emotional Intelligence: The Foundation for Success and Well-being</h2>
+        <p>Emotional intelligence—the ability to understand and manage emotions effectively—has emerged as one of the most important predictors of success and well-being in modern life. For children growing up in today's complex world, developing strong emotional intelligence provides advantages that extend far beyond academic achievement.</p>
+        
+        <h3>Why Emotional Intelligence Matters</h3>
+        <p>Research consistently shows that emotional intelligence (often called EQ) influences many aspects of life outcomes. Children with well-developed emotional intelligence benefit from:</p>
+        <ul>
+          <li>Stronger academic performance and school engagement</li>
+          <li>Better mental health and resilience</li>
+          <li>More positive and lasting relationships</li>
+          <li>Greater leadership abilities</li>
+          <li>Improved conflict resolution skills</li>
+          <li>Higher career achievement in adulthood</li>
+          <li>Reduced likelihood of engaging in risky behaviors</li>
+        </ul>
+        
+        <h3>Core Components of Emotional Intelligence</h3>
+        <p><strong>Self-Awareness:</strong> The ability to recognize and understand your own emotions, including how they affect your thoughts and behavior. This includes accurately assessing your strengths and limitations.</p>
+        
+        <p><strong>Self-Regulation:</strong> Managing emotions appropriately, controlling impulsive reactions, and adjusting to changing circumstances in constructive ways.</p>
+        
+        <p><strong>Social Awareness:</strong> Recognizing emotions in others, understanding social dynamics, and demonstrating empathy and compassion.</p>
+        
+        <p><strong>Relationship Management:</strong> Using emotional understanding to build and maintain healthy relationships, communicate effectively, and navigate social complexities.</p>
+        
+        <p><strong>Responsible Decision-Making:</strong> Considering emotions, ethics, safety, and social norms when making choices and evaluating their consequences.</p>
+        
+        <h3>Developing Emotional Intelligence by Age</h3>
+        <p><strong>Ages 2-5:</strong> In these foundational years, focus on emotional literacy. Help children identify and name basic emotions (happy, sad, angry, scared) in themselves and others. Use simple facial expression charts, books about feelings, and mirror play. Validate emotions rather than dismissing them ("I see you're feeling frustrated"). Teach simple calming strategies like deep breathing or counting. Model emotional language by narrating your own feelings.</p>
+        
+        <p><strong>Ages 6-9:</strong> As social worlds expand, build on basics with greater complexity. Expand emotional vocabulary to include more nuanced feelings (disappointed, anxious, proud). Teach that emotions can vary in intensity and that multiple feelings can occur simultaneously. Help children identify physical cues of emotions in their bodies. Begin introducing the connection between thoughts, feelings, and behaviors. Practice basic perspective-taking through stories and role-play.</p>
+        
+        <p><strong>Ages 10-13:</strong> During these pre-adolescent years, deepen understanding as emotional experiences become more complex. Discuss how emotions influence decision-making and introduce strategies for thinking before acting. Help children understand that emotions provide important information but don't have to control behavior. Develop more sophisticated empathy by exploring how different people might have different emotional reactions to the same situation. Introduce journaling or creative expression as emotional processing tools.</p>
+        
+        <p><strong>Ages 14-18:</strong> Adolescence requires refining emotional intelligence amid significant physical and social changes. Support teens in developing their emotional identity—understanding their typical patterns of emotional response. Discuss how values, goals, and emotions interact in decision-making. Explore how social media and digital communication impact emotional experiences. Teach healthy conflict resolution strategies for more complex relationships. Encourage self-reflection on emotional triggers and effective personal coping mechanisms.</p>
+        
+        <h3>Practical Strategies for Parents</h3>
+        <p><strong>Create an Emotion-Coaching Home:</strong> Establish a family culture where all emotions are accepted (while all behaviors may not be). Make it safe for children to express feelings without fear of dismissal or punishment.</p>
+        
+        <p><strong>Model Healthy Emotional Expression:</strong> Children learn primarily by watching you. Demonstrate appropriate ways to express feelings, regulate emotions, and resolve conflicts. This includes acknowledging when you make mistakes in emotional management.</p>
+        
+        <p><strong>Use Emotional Moments as Teaching Opportunities:</strong> When children experience strong emotions, help them through the moment first, then later reflect on what happened, how they felt, and what strategies might work next time.</p>
+        
+        <p><strong>Practice Perspective-Taking:</strong> Regularly discuss how others might feel in various situations: "How do you think your friend felt when...?" or "Why might your teacher have responded that way?"</p>
+        
+        <p><strong>Read Fiction Together:</strong> Stories provide rich opportunities to discuss characters' emotions, motivations, and relationships. Research shows reading fiction enhances empathy and social understanding.</p>
+        
+        <p><strong>Play Emotion Games:</strong> Many games naturally build emotional intelligence: charades with emotion cards, making up stories about what characters might be feeling in pictures, or role-playing different scenarios.</p>
+        
+        <p><strong>Validate Then Problem-Solve:</strong> When children express difficult emotions, start by acknowledging and accepting the feeling before moving to solutions: "I see you're really angry about that. That makes sense. When you're ready, let's think about what might help."</p>
+        
+        <h3>Overcoming Challenges to Emotional Intelligence Development</h3>
+        <p>Several factors can make emotional intelligence development more difficult:</p>
+        <ul>
+          <li><strong>Family Patterns:</strong> If emotional expression wasn't modeled or was discouraged in your own upbringing, consciously working to break these patterns may be necessary.</li>
+          <li><strong>Gender Stereotypes:</strong> Be aware of messages that boys shouldn't cry or girls should always be pleasant, which limit emotional development.</li>
+          <li><strong>Digital Distraction:</strong> Excessive screen time can reduce opportunities for face-to-face emotional learning and practice.</li>
+          <li><strong>Individual Differences:</strong> Some children are naturally more emotionally sensitive or have neurodevelopmental differences that affect emotional processing.</li>
+        </ul>
+        
+        <h3>When to Seek Additional Support</h3>
+        <p>While all children develop emotional skills at different rates, some signs may indicate a need for additional support:</p>
+        <ul>
+          <li>Persistent difficulty identifying even basic emotions in self or others</li>
+          <li>Frequent emotional outbursts that don't diminish with age-appropriate guidance</li>
+          <li>Ongoing struggles in peer relationships due to emotional misunderstanding</li>
+          <li>Extreme emotional responses that significantly disrupt daily functioning</li>
+        </ul>
+        
+        <h3>Conclusion</h3>
+        <p>Emotional intelligence develops gradually through childhood and adolescence, through both implicit learning from environment and explicit teaching of skills. By intentionally fostering these abilities from early years through adolescence, parents equip children with essential tools for navigating relationships, work, and life challenges. In a world where technology increasingly handles cognitive tasks, human connection and emotional understanding become even more valuable differentiators for success and fulfillment.</p>
+      `;
+    case 9:
+      return `
+        <h2>Growth Mindset: Fostering a Love of Learning and Resilience</h2>
+        <p>A growth mindset—the belief that abilities can be developed through dedication and hard work—has emerged as one of the most powerful concepts in education and child development. First identified by psychologist Carol Dweck, growth mindset stands in contrast to a fixed mindset, which views talents and intelligence as static traits. For parents, fostering a growth mindset in children lays the foundation for lifelong learning, resilience, and achievement.</p>
+        
+        <h3>Why Growth Mindset Matters</h3>
+        <p>Research consistently shows that children who develop a growth mindset experience significant advantages:</p>
+        <ul>
+          <li>Greater academic achievement, particularly when facing challenges</li>
+          <li>Higher motivation and engagement in learning</li>
+          <li>Increased perseverance when confronting obstacles</li>
+          <li>More positive responses to feedback and criticism</li>
+          <li>Lower fear of failure and greater willingness to take on challenges</li>
+          <li>Better emotional resilience after setbacks</li>
+          <li>Stronger relationships through more open communication and collaboration</li>
+        </ul>
+        
+        <h3>Key Components of Growth Mindset</h3>
+        <p><strong>Embracing Challenges:</strong> Viewing difficult tasks as opportunities to grow rather than threats to avoid.</p>
+        
+        <p><strong>Persisting Through Obstacles:</strong> Maintaining effort and trying different strategies when facing setbacks rather than giving up.</p>
+        
+        <p><strong>Valuing Effort:</strong> Understanding that hard work and dedication are pathways to mastery and achievement.</p>
+        
+        <p><strong>Learning from Criticism:</strong> Seeing feedback as helpful information for improvement rather than as personal judgment.</p>
+        
+        <p><strong>Finding Inspiration in Others' Success:</strong> Learning from and being motivated by others' achievements rather than feeling threatened by them.</p>
+        
+        <p><strong>Understanding the Brain's Plasticity:</strong> Recognizing that the brain forms new connections throughout life, especially when learning something new.</p>
+        
+        <h3>Nurturing Growth Mindset by Age</h3>
+        <p><strong>Ages 2-5:</strong> During these early years, lay foundations through language and modeling. Use process praise rather than person praise ("You worked really hard on that" instead of "You're so smart"). Introduce the word "yet" to frame developing skills ("You can't tie your shoes yet, but you're learning"). Read stories featuring characters who persist through challenges. Model your own learning process out loud ("This is hard for me, but I'll keep trying different ways"). Avoid labeling children with fixed traits, even positive ones like "smart" or "artistic."</p>
+        
+        <p><strong>Ages 6-9:</strong> As academic challenges increase, reinforce growth mindset principles explicitly. Teach children about how the brain works - forming new connections when we practice skills. Normalize mistakes as part of learning and share your own learning mistakes. Help children set process goals (focusing on improvement and effort) rather than outcome goals only. Introduce the concept of "growth" vs. "fixed" mindset directly, using age-appropriate examples. Create opportunities for children to persist through challenges with appropriate support.</p>
+        
+        <p><strong>Ages 10-13:</strong> During these pivotal years, deepen understanding as academic and social pressures intensify. Discuss how famous inventors, artists, athletes, and scientists faced failures before successes. Help children develop metacognitive skills - reflecting on their learning strategies and adapting them. Address the tendency to compare oneself with peers by focusing on personal growth. Introduce more sophisticated ways to respond to setbacks, including seeking help, researching new approaches, and breaking problems into smaller steps. Discuss how media often presents success stories without showing the struggles behind them.</p>
+        
+        <p><strong>Ages 14-18:</strong> As teens prepare for increasing independence, connect growth mindset to broader life applications. Help teens identify their core values and connect these to learning goals. Discuss how growth mindset applies to social skills and relationships, not just academics. Encourage appropriate academic risk-taking, like trying courses that may be challenging. Support teens in developing their own feedback systems rather than relying solely on external validation. Explore how growth mindset connects to career exploration and development.</p>
+        
+        <h3>Practical Strategies for Parents</h3>
+        <p><strong>Mind Your Language:</strong> Be conscious of the messages your words send about ability and effort. Instead of "Are you smart enough for that class?" try "That class will give you a chance to push yourself and learn new strategies."</p>
+        
+        <p><strong>Share Your Own Growth Journey:</strong> Talk about skills you've developed through practice, challenges you've overcome, and new things you're learning as an adult.</p>
+        
+        <p><strong>Celebrate Effort and Strategy:</strong> When children succeed, acknowledge the process: "I noticed how you tried different approaches until you found one that worked" or "Your practice is really paying off."</p>
+        
+        <p><strong>Reframe Setbacks:</strong> Help children see challenges as temporary and specific rather than permanent and pervasive. "You struggled with these math problems today. What could we try differently tomorrow?"</p>
+        
+        <p><strong>Ask Growth-Oriented Questions:</strong> When children face difficulties, ask: "What have you tried so far?" "What strategies could you use?" "Who could you ask for help?" "What did you learn from this experience?"</p>
+        
+        <p><strong>Create a Challenge-Positive Home:</strong> Cultivate an environment where trying difficult things is valued more than easy success. Model taking on challenges yourself and normalize struggle as part of growth.</p>
+        
+        <p><strong>Expose Children to Varied Activities:</strong> Provide opportunities to try different skills and domains, allowing children to experience the progression from novice to greater competence in diverse areas.</p>
+        
+        <h3>Overcoming Obstacles to Growth Mindset</h3>
+        <p>Several common barriers can interfere with developing a growth mindset:</p>
+        <ul>
+          <li><strong>Praise Habits:</strong> Overemphasis on innate talent or intelligence can inadvertently reinforce fixed mindset. Focus praise on process, effort, and strategy.</li>
+          <li><strong>Fear of Failure:</strong> Environments where mistakes are treated as disasters make growth mindset difficult. Create safe spaces for taking risks and learning from errors.</li>
+          <li><strong>Perfectionism:</strong> The belief that anything less than perfect performance equals failure undermines growth. Help children set realistic expectations and value progress.</li>
+          <li><strong>Social Comparison:</strong> Constant comparison to others shifts focus from personal growth to relative standing. Encourage children to use their past performance as the benchmark for improvement.</li>
+          <li><strong>Stereotype Threat:</strong> Awareness of negative stereotypes about one's group can trigger fixed mindset responses. Counter these with examples that challenge stereotypes and emphasize growth potential.</li>
+        </ul>
+        
+        <h3>Conclusion</h3>
+        <p>A growth mindset is not innate but can be developed through intentional parenting approaches that emphasize effort, persistence, learning from mistakes, and the brain's capacity for growth. By fostering these attitudes from early childhood through adolescence, parents equip children with a powerful internal framework that enhances learning, resilience, and achievement across all areas of life. The goal isn't to deny that children have different starting points and natural inclinations, but to help them understand that wherever they begin, their abilities can be developed through dedication and appropriate strategies.</p>
+      `;
+    case 10:
+      return `
+        <h2>Entrepreneurial Thinking: Preparing Children for Future Success</h2>
+        <p>Entrepreneurial thinking—the ability to identify opportunities, solve problems creatively, and take initiative—has become an essential skill set for success in the 21st century. Beyond starting businesses, these skills prepare children to navigate a rapidly changing world with confidence, creativity, and resilience regardless of their eventual career paths.</p>
+        
+        <h3>Why Entrepreneurial Thinking Matters</h3>
+        <p>The future of work is increasingly characterized by automation, frequent career changes, and the rise of the gig economy. Children with entrepreneurial mindsets are better equipped to:</p>
+        <ul>
+          <li>Identify needs and opportunities in any environment</li>
+          <li>Take initiative rather than waiting for instructions</li>
+          <li>Adapt quickly to changing circumstances</li>
+          <li>Create value in various contexts</li>
+          <li>Recover from failures and setbacks</li>
+          <li>Communicate effectively and persuasively</li>
+          <li>Turn ideas into action</li>
+        </ul>
+        
+        <h3>Core Components of Entrepreneurial Thinking</h3>
+        <p><strong>Opportunity Recognition:</strong> The ability to spot needs, problems, or gaps that could be addressed with new solutions.</p>
+        
+        <p><strong>Critical Thinking:</strong> Analyzing situations objectively, questioning assumptions, and evaluating evidence to make sound decisions.</p>
+        
+        <p><strong>Creative Problem-Solving:</strong> Generating innovative solutions and approaching challenges from multiple perspectives.</p>
+        
+        <p><strong>Resilience:</strong> Bouncing back from setbacks, learning from failures, and persisting despite obstacles.</p>
+        
+        <p><strong>Financial Literacy:</strong> Understanding basic concepts of money, value, profit, investment, and resource allocation.</p>
+        
+        <p><strong>Communication Skills:</strong> Articulating ideas clearly, listening effectively, and persuading others of a vision or concept.</p>
+        
+        <p><strong>Self-Efficacy:</strong> The belief in one's ability to accomplish goals and influence outcomes.</p>
+        
+        <h3>Developing Entrepreneurial Thinking by Age</h3>
+        <p><strong>Ages 3-6:</strong> During these foundational years, focus on curiosity and basic concepts. Encourage questions about how things work and why things are the way they are. Play "spot the problem" games in everyday situations ("What could make this better?"). Introduce simple financial concepts through play stores or markets. Read stories about characters who solve problems creatively. Allow children to make simple choices and experience the outcomes.</p>
+        
+        <p><strong>Ages 7-10:</strong> As abstract thinking develops, introduce more structured entrepreneurial activities. Help children identify their own skills and interests that could create value for others. Set up simple entrepreneurial experiences like lemonade stands or craft sales. Discuss basic business concepts like cost, price, and profit. Introduce brainstorming techniques for generating multiple solutions to problems. Encourage children to think about ways to help in their community.</p>
+        
+        <p><strong>Ages 11-13:</strong> During these pivotal years, deepen understanding through more complex projects. Support children in identifying and researching real community needs. Introduce design thinking concepts: empathize, define, ideate, prototype, test. Discuss how businesses and social enterprises create different types of value. Help children analyze advertisements and marketing messages critically. Expand financial literacy to include concepts like saving, investing, and charitable giving. Provide opportunities to interview entrepreneurs or business professionals.</p>
+        
+        <p><strong>Ages 14-18:</strong> As teens prepare for increasing independence, connect entrepreneurial thinking to future pathways. Support longer-term entrepreneurial projects from idea to implementation. Discuss how entrepreneurial skills apply in traditional employment and alternative career paths. Explore concepts like minimum viable product, customer feedback, and iterative development. Connect teens with mentors in areas of interest. Encourage participation in entrepreneurship programs, competitions, or internships. Help teens develop a personal "brand" and professional presence.</p>
+        
+        <h3>Practical Strategies for Parents</h3>
+        <p><strong>Create a "Yes Space":</strong> Designate areas where children can freely experiment, create, and problem-solve with minimal adult interference. Stock these spaces with diverse materials and tools appropriate to their age.</p>
+        
+        <p><strong>Ask Entrepreneurial Questions:</strong> Regularly pose questions that stimulate entrepreneurial thinking: "What problem needs solving?" "Who might need this?" "How could this be improved?" "What's another way to look at this situation?"</p>
+        
+        <p><strong>Celebrate Productive Failure:</strong> Reframe failures as valuable learning experiences. When something doesn't work, help children analyze why and how they might approach it differently next time.</p>
+        
+        <p><strong>Provide Real Responsibilities:</strong> Give children age-appropriate responsibilities that matter to the family or community. This develops initiative, problem-solving, and a sense of capability.</p>
+        
+        <p><strong>Encourage Side Projects:</strong> Support children in pursuing projects based on their interests, whether creating YouTube tutorials, designing games, organizing neighborhood events, or making handcrafted items.</p>
+        
+        <p><strong>Discuss the Business Behind Things:</strong> Help children notice and understand the entrepreneurial aspects of everyday life—how restaurants determine pricing, why stores arrange products in certain ways, or how new products address customer needs.</p>
+        
+        <p><strong>Connect Learning to Real World:</strong> Help children see how school subjects connect to entrepreneurial applications: math for financial calculations, writing for persuasive communications, science for product development, history for understanding market evolution.</p>
+        
+        <h3>Addressing Potential Concerns</h3>
+        <p>Some parents worry that emphasizing entrepreneurial thinking might:</p>
+        <ul>
+          <li><strong>Promote Materialism:</strong> Focus on how entrepreneurship creates value in many forms, not just financial—social, cultural, environmental, and community value are equally important.</li>
+          <li><strong>Increase Pressure:</strong> Emphasize that entrepreneurial thinking is about process and mindset, not necessarily outcomes or achievements.</li>
+          <li><strong>Discourage Traditional Education:</strong> Position entrepreneurial skills as complementary to academic learning, not a replacement.</li>
+          <li><strong>Seem Irrelevant for Some Careers:</strong> Highlight how these skills benefit all pathways, from medicine and teaching to arts and traditional employment.</li>
+        </ul>
+        
+        <h3>Learning from Entrepreneurial Failure</h3>
+        <p>Failure is particularly valuable for developing entrepreneurial thinking when approached constructively:</p>
+        <ul>
+          <li>Guide children through post-project reviews: What worked? What didn't? Why?</li>
+          <li>Help identify specific lessons that can be applied to future ventures</li>
+          <li>Share stories of successful entrepreneurs who experienced significant failures</li>
+          <li>Distinguish between project failure and personal failure</li>
+          <li>Celebrate the courage it takes to try something that might not succeed</li>
+        </ul>
+        
+        <h3>Conclusion</h3>
+        <p>Entrepreneurial thinking is not about pushing every child to become a business founder, but about developing a versatile mindset that serves them in any future path. By fostering these skills from early childhood through adolescence, parents equip children with the ability to create opportunities rather than just respond to them, to solve problems rather than just identify them, and to thrive in a world of constant change. In an era where traditional career paths are increasingly uncertain, entrepreneurial thinking provides children with the ultimate form of career security: the ability to create value wherever they go.</p>
+      `;
+    case 11:
+      return `
+        <h2>Global Citizenship: Raising Children for a Connected World</h2>
+        <p>Global citizenship—the awareness of and engagement with the wider world—has become an essential mindset for children growing up in an increasingly interconnected society. Beyond simply knowing about different countries, global citizenship encompasses understanding diverse perspectives, recognizing shared challenges, and developing the skills to collaborate across cultural boundaries.</p>
+        
+        <h3>Why Global Citizenship Matters</h3>
+        <p>Today's children will face global challenges and opportunities unprecedented in human history. Developing a global mindset helps them:</p>
+        <ul>
+          <li>Thrive in diverse academic and work environments</li>
+          <li>Navigate complex global issues with nuanced understanding</li>
+          <li>Develop greater empathy and cultural humility</li>
+          <li>Recognize their potential impact on worldwide systems</li>
+          <li>Contribute to solutions for shared global challenges</li>
+          <li>Access opportunities in an increasingly international job market</li>
+          <li>Build meaningful connections across cultural differences</li>
+        </ul>
+        
+        <h3>Core Components of Global Citizenship</h3>
+        <p><strong>Cultural Awareness and Sensitivity:</strong> Understanding diverse cultures, recognizing one's own cultural lens, and adapting appropriately to different cultural contexts.</p>
+        
+        <p><strong>Global Issues Knowledge:</strong> Understanding key worldwide challenges like climate change, poverty, migration, and public health that transcend national boundaries.</p>
+        
+        <p><strong>Perspective-Taking:</strong> The ability to consider different viewpoints and understand how various cultural, historical, and geographical contexts shape how people see the world.</p>
+        
+        <p><strong>Interconnectedness Understanding:</strong> Recognizing how local actions can have global impacts and how global systems affect local communities.</p>
+        
+        <p><strong>Communication Across Differences:</strong> Skills for effectively engaging with people from diverse backgrounds, including language learning and intercultural communication.</p>
+        
+        <p><strong>Ethical Global Engagement:</strong> Ability to participate in global issues in ways that are respectful, informed, and avoid harmful patterns like saviorism or exploitation.</p>
+        
+        <h3>Developing Global Citizenship by Age</h3>
+        <p><strong>Ages 3-6:</strong> During these foundational years, build basic awareness of diversity and connection. Introduce simple maps and globes to develop geographical awareness. Read stories featuring children from different cultures and backgrounds. Celebrate diverse holidays and cultural traditions with authentic respect rather than tokenism. Begin basic conversations about how people around the world have similar needs but might meet them differently. Use children's natural curiosity about differences as opportunities for learning rather than discomfort.</p>
+        
+        <p><strong>Ages 7-10:</strong> As understanding expands, deepen knowledge while building empathy. Connect global learning to children's personal experiences and interests. Explore how everyday items (food, clothes, toys) connect to people and places around the world. Introduce age-appropriate global issues like environmental protection or access to education. Develop media literacy to identify stereotypes about other cultures or countries. Explore different languages through basic phrases, songs, or counting systems. Establish pen pal relationships or classroom connections with children in different regions.</p>
+        
+        <p><strong>Ages 11-13:</strong> During these formative years, build critical thinking about global systems. Examine how historical events have shaped current global relationships and challenges. Discuss how different cultural perspectives might lead to different approaches to shared problems. Explore the concept of ethical consumption and how purchasing choices connect to global impacts. Introduce more complex global issues like inequality, migration, or climate justice in age-appropriate ways. Encourage research projects that require considering multiple perspectives on international topics. Provide opportunities to meet people from different backgrounds through community events, cultural centers, or virtual exchanges.</p>
+        
+        <p><strong>Ages 14-18:</strong> As teens develop more abstract thinking, connect global citizenship to identity and action. Support deeper engagement with global issues that align with teens' values and interests. Discuss how systems (economic, political, social) operate across borders and influence daily life. Explore career and educational pathways with global dimensions. Facilitate meaningful cross-cultural exchanges through travel, hosting, service learning, or sustained virtual connections. Analyze news media from different countries on the same events to identify varying perspectives. Encourage teens to consider their potential contributions to addressing global challenges.</p>
+        
+        <h3>Practical Strategies for Parents</h3>
+        <p><strong>Start with Curiosity, Not Judgment:</strong> Model asking questions and seeking to understand different cultural practices rather than evaluating them through your own cultural lens.</p>
+        
+        <p><strong>Expand Your Home Environment:</strong> Incorporate books, music, art, films, and foods from diverse cultures as regular parts of family life, not just special occasions.</p>
+        
+        <p><strong>Seek Authentic Cultural Experiences:</strong> Look for opportunities to engage with different cultures through local cultural centers, community events, museums, or relationships with people from diverse backgrounds.</p>
+        
+        <p><strong>Discuss News with Global Perspective:</strong> When major world events occur, help children understand different stakeholders' perspectives and how the issue connects to broader patterns.</p>
+        
+        <p><strong>Support Language Learning:</strong> Encourage interest in additional languages, whether through formal study, apps, community classes, or exposure through media.</p>
+        
+        <p><strong>Travel Thoughtfully:</strong> When possible, approach travel (even domestically) as an educational opportunity, preparing by learning about destinations and emphasizing respectful engagement rather than just tourist experiences.</p>
+        
+        <p><strong>Make Global-Local Connections:</strong> Help children understand how global issues manifest in your local community and how local actions connect to global impacts.</p>
+        
+        <h3>Navigating Challenges in Global Citizenship Education</h3>
+        <p>Several complexities require thoughtful navigation:</p>
+        <ul>
+          <li><strong>Avoiding Stereotypes:</strong> Ensure that children understand diversity within cultures and countries rather than reducing them to single stories or characteristics.</li>
+          <li><strong>Balancing Pride and Critique:</strong> Help children develop both appreciation for their own cultural heritage and the ability to think critically about all societies, including their own.</li>
+          <li><strong>Addressing Difficult Histories:</strong> Age-appropriately discuss historical injustices like colonialism, slavery, or genocide that have shaped current global relationships.</li>
+          <li><strong>Preventing Overwhelm:</strong> Balance awareness of serious global challenges with emphasis on agency, hope, and the many people working on solutions.</li>
+          <li><strong>Navigating Political Differences:</strong> Focus on developing critical thinking skills rather than specific political positions on complex global issues.</li>
+        </ul>
+        
+        <h3>Conclusion</h3>
+        <p>Global citizenship education is not about minimizing cultural differences or national identities, but about preparing children to engage effectively and ethically in a world where such differences exist within shared human systems. By fostering these skills from early childhood through adolescence, parents equip children not just with knowledge about the world, but with the capacity to navigate it with empathy, intelligence, and responsibility. In an era where global challenges increasingly require collaborative solutions, raising children with global citizenship mindsets prepares them both for personal success and meaningful contribution to our shared future.</p>
+      `;
+    case 12:
+      return `
+        <h2>Leadership Development: Nurturing Future Leaders</h2>
+        <p>Leadership—the ability to influence, inspire, and empower others toward a common goal—has evolved far beyond hierarchical authority to encompass a diverse set of collaborative skills essential for success in nearly any endeavor. For parents, recognizing and cultivating leadership potential in children lays a foundation for their future impact and effectiveness in whatever paths they choose.</p>
+        
+        <h3>Why Leadership Development Matters</h3>
+        <p>Contrary to the myth that leaders are born, research consistently shows that leadership skills can be developed throughout childhood and adolescence. Children with emerging leadership abilities benefit from:</p>
+        <ul>
+          <li>Greater confidence and self-efficacy</li>
+          <li>Enhanced communication and interpersonal skills</li>
+          <li>Improved problem-solving and decision-making</li>
+          <li>Stronger sense of responsibility and ethical reasoning</li>
+          <li>Increased resilience when facing challenges</li>
+          <li>More positive peer relationships and social influence</li>
+          <li>Better preparation for academic, career, and community engagement</li>
+        </ul>
+        
+        <h3>Modern Leadership Qualities</h3>
+        <p><strong>Vision and Purpose:</strong> The ability to imagine possibilities, set meaningful goals, and inspire shared direction.</p>
+        
+        <p><strong>Emotional Intelligence:</strong> Understanding and managing one's own emotions while effectively perceiving and influencing others' emotions.</p>
+        
+        <p><strong>Adaptive Problem-Solving:</strong> Approaching challenges with creativity, critical thinking, and willingness to adjust strategies as needed.</p>
+        
+        <p><strong>Ethical Decision-Making:</strong> Making choices based on principles, considering impacts on various stakeholders, and demonstrating integrity.</p>
+        
+        <p><strong>Inclusive Collaboration:</strong> Building diverse teams, valuing different perspectives, and creating environments where everyone can contribute.</p>
+        
+        <p><strong>Effective Communication:</strong> Expressing ideas clearly, listening actively, and adapting communication styles to different audiences.</p>
+        
+        <p><strong>Initiative and Perseverance:</strong> Taking action without being prompted and maintaining effort despite obstacles.</p>
+        
+        <h3>Developing Leadership by Age</h3>
+        <p><strong>Ages 3-6:</strong> During these foundational years, focus on basic social-emotional skills that underlie leadership. Provide opportunities for making simple choices and experiencing their outcomes. Encourage helping others and taking on small responsibilities within their capabilities. Use stories and discussion to develop early empathy and perspective-taking. Foster independent problem-solving with appropriate support. Practice taking turns leading and following in games and activities. Acknowledge acts of kindness, helpfulness, and positive influence on others.</p>
+        
+        <p><strong>Ages 7-10:</strong> As social worlds expand, introduce more intentional leadership experiences. Assign meaningful responsibilities that contribute to family functioning. Encourage participation in group activities where different leadership roles can be practiced. Introduce concepts of teamwork and how different strengths contribute to group success. Help children recognize and articulate their own values and how these guide their actions. Discuss examples of effective leadership in stories, history, and current events. Support emerging conflict resolution skills in peer relationships.</p>
+        
+        <p><strong>Ages 11-13:</strong> During these pivotal years, deepen leadership understanding amid increasing social complexity. Discuss different leadership styles and their effectiveness in various situations. Provide opportunities to lead small projects from planning through completion. Encourage ethical reasoning through discussions of real-world dilemmas. Support healthy assertiveness balanced with respect for others. Introduce concepts of positive influence versus peer pressure. Explore how effective leaders handle setbacks and mistakes. Connect leadership development to emerging personal strengths and interests.</p>
+        
+        <p><strong>Ages 14-18:</strong> As teens transition toward adulthood, connect leadership to identity and future impact. Support leadership roles with increasing responsibility and complexity. Discuss how leadership manifests across different contexts: family, school, work, community. Explore social change leadership and how young people can address community challenges. Facilitate reflection on personal leadership experiences—successes, failures, and lessons learned. Encourage mentor relationships with adults who model different leadership approaches. Connect leadership development to potential career paths and civic engagement.</p>
+        
+        <h3>Practical Strategies for Parents</h3>
+        <p><strong>Provide Autonomy with Support:</strong> Give children age-appropriate independence in decision-making while remaining available for guidance. Gradually expand their sphere of responsibility as capabilities grow.</p>
+        
+        <p><strong>Model Leadership Qualities:</strong> Demonstrate effective leadership in your own life—how you communicate during disagreements, handle setbacks, collaborate with others, and make ethical choices.</p>
+        
+        <p><strong>Recognize Diverse Leadership Styles:</strong> Help children identify their unique leadership strengths rather than comparing them to stereotypical leadership models. Some lead through quiet influence, others through energetic inspiration, others through thoughtful organization.</p>
+        
+        <p><strong>Create Family Leadership Opportunities:</strong> Rotate responsibility for family decisions like meal planning, activity selection, or problem-solving household challenges. Hold family meetings where children's input is genuinely valued.</p>
+        
+        <p><strong>Connect to Interests:</strong> Look for leadership development opportunities connected to your child's existing passions, whether sports, arts, technology, environmental issues, or community service.</p>
+        
+        <p><strong>Process Experiences:</strong> After leadership opportunities, discuss what went well, what challenges arose, and what your child learned. Help them connect specific actions to outcomes.</p>
+        
+        <p><strong>Encourage Healthy Risk-Taking:</strong> Support children in stretching beyond comfort zones to take on new challenges, while creating a safe environment where failure is viewed as a learning opportunity.</p>
+        
+        <h3>Addressing Common Leadership Development Challenges</h3>
+        <p>Several situations require thoughtful parental guidance:</p>
+        <ul>
+          <li><strong>The Reluctant Leader:</strong> Some children with strong leadership potential hesitate to step forward. Provide low-pressure opportunities, start with strengths-based roles, and gradually build confidence.</li>
+          <li><strong>The Domineering Approach:</strong> Children who tend to control others need guidance toward more collaborative leadership. Discuss the difference between bossiness and leadership, emphasizing how effective leaders empower others.</li>
+          <li><strong>Balancing Leadership and Friendship:</strong> Help children navigate the complexities of leading peers while maintaining relationships, particularly during early adolescence when social dynamics become more complex.</li>
+          <li><strong>Handling Leadership Disappointments:</strong> When children aren't selected for formal leadership roles or experience group challenges, help them process emotions, extract lessons, and find alternative ways to make positive contributions.</li>
+          <li><strong>Perfectionism in Leadership:</strong> Some children feel they must be flawless as leaders. Emphasize that effective leadership includes acknowledging mistakes, seeking feedback, and continuous learning.</li>
+        </ul>
+        
+        <h3>Conclusion</h3>
+        <p>Leadership development is a gradual process of building skills, experiences, and mindsets that enable children to positively influence their world. By intentionally fostering these qualities from early childhood through adolescence, parents prepare children not just for formal leadership positions, but for the everyday leadership opportunities that arise in relationships, workplaces, and communities. The goal isn't to raise children who merely direct others, but who inspire, collaborate, and empower—creating positive impact through their presence and actions regardless of title or position.</p>
+      `;
+    default:
+      return `
+        <p class="text-gray-600 italic">Full article coming soon. Our experts are creating the most valuable, actionable content for parents.</p>
+      `;
+  }
+};
+
+export default Resources;
+
