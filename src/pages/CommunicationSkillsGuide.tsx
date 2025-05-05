@@ -13,7 +13,7 @@ const CommunicationSkillsGuide = () => {
     <div className="container mx-auto py-8 px-4">
       <PageHeader
         title="Communication Skills"
-        subtitle="Helping children develop effective communication skills for success in a digital world"
+        description="Helping children develop effective communication skills for success in a digital world"
       />
 
       <div className="max-w-4xl mx-auto mt-8">
