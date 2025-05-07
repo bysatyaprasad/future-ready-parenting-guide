@@ -6,6 +6,9 @@ import ResourceCard from '../components/ResourceCard';
 import ArticleContent from '../components/ArticleContent';
 import { resources } from '../constants/resourcesData';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
+import { ChevronLeft, Home } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Resources = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -90,10 +93,18 @@ const Resources = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-10 bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-xl">
               <h1 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Parent Resources</h1>
-              <p className="text-gray-600 max-w-2xl mx-auto">
+              <p className="text-gray-600 max-w-2xl mx-auto mb-6">
                 Simple guides and tools to help your child build future-ready skills.
                 Each resource is designed to be easy to understand and put into practice.
               </p>
+              <div className="flex justify-center">
+                <Button asChild variant="outline" className="border-brand-blue text-brand-blue hover:bg-blue-50">
+                  <Link to="/">
+                    <Home className="mr-2 h-4 w-4" />
+                    Back to Home
+                  </Link>
+                </Button>
+              </div>
             </div>
             
             <ResourcesFilter
@@ -137,6 +148,14 @@ const Resources = () => {
                 ))}
               </div>
             )}
+            
+            <div className="flex justify-center mt-12">
+              <Button asChild variant="default" className="bg-brand-blue hover:bg-blue-700">
+                <Link to="/skills">
+                  Explore Skill Guides
+                </Link>
+              </Button>
+            </div>
           </div>
         </TabsContent>
         
