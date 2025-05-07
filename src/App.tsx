@@ -21,6 +21,10 @@ import CreativeProblemSolvingSkill from "./pages/CreativeProblemSolvingSkill";
 import EntrepreneurshipSkill from "./pages/EntrepreneurshipSkill";
 import CodingSkill from "./pages/CodingSkill";
 import SocialIntelligenceSkill from "./pages/SocialIntelligenceSkill";
+import SelfManagementSkill from "./pages/SelfManagementSkill";
+import AdaptiveLearningSkill from "./pages/AdaptiveLearningSkill";
+import MediaLiteracySkill from "./pages/MediaLiteracySkill";
+import GlobalAwarenessSkill from "./pages/GlobalAwarenessSkill";
 
 const queryClient = new QueryClient();
 
@@ -46,6 +50,10 @@ const App = () => (
             <Route path="/skills/entrepreneurship" element={<EntrepreneurshipSkill />} />
             <Route path="/skills/coding" element={<CodingSkill />} />
             <Route path="/skills/social-intelligence" element={<SocialIntelligenceSkill />} />
+            <Route path="/skills/self-management" element={<SelfManagementSkill />} />
+            <Route path="/skills/adaptive-learning" element={<AdaptiveLearningSkill />} />
+            <Route path="/skills/media-literacy" element={<MediaLiteracySkill />} />
+            <Route path="/skills/global-awareness" element={<GlobalAwarenessSkill />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
